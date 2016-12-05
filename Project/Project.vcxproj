@@ -94,11 +94,26 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="Cash.h" />
+    <ClInclude Include="CreditCard.h" />
+    <ClInclude Include="Detail.h" />
+    <ClInclude Include="Epayment.h" />
+    <ClInclude Include="EcommercialManage.h" />
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Icash.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Payment.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SaleManage.h" />
+    <ClInclude Include="SaleSystem.h" />
+    <ClInclude Include="Staff.h" />
+    <ClInclude Include="StaffManage.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StoreData.h" />
+    <ClInclude Include="StoreManage.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

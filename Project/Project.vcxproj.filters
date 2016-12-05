@@ -41,10 +41,60 @@
     <ClInclude Include="resource.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="StoreManage.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="StaffManage.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Staff.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreData.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SaleManage.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="EcommercialManage.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SaleSystem.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Detail.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Payment.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Cash.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditCard.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Icash.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Epayment.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
       <Filter>資源檔</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resX">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

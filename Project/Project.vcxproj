@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="EPayment.cpp" />
     <ClCompile Include="Project.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -98,8 +99,10 @@
     <ClInclude Include="Cash.h" />
     <ClInclude Include="CreditCard.h" />
     <ClInclude Include="Detail.h" />
-    <ClInclude Include="Epayment.h" />
     <ClInclude Include="EcommercialManage.h" />
+    <ClInclude Include="EPayment.h">
+      <FileType>CppClass</FileType>
+    </ClInclude>
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>

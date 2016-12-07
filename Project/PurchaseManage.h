@@ -1,5 +1,8 @@
 #pragma once
+class PurchaseManage
+{
+	public:
+		PurchaseManage(void);
 
-class PurchaseManage { //進貨管理
-  
 };
+

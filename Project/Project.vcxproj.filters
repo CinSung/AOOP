@@ -33,6 +33,21 @@
     <ClCompile Include="EPayment.cpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+    <ClCompile Include="Package.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="PurchaseManage.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="WarehouseManage.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="Product.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="WarehouseManageUI.cpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -86,7 +101,19 @@
     <ClInclude Include="Icash.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="EPayment.h">
+    <ClInclude Include="Package.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="PurchaseManage.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="WarehouseManage.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Product.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="WarehouseManageUI.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

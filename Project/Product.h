@@ -1,13 +1,25 @@
 #pragma once
-#include <string>
 
-class Product {
+#include "stdafx.h"
+using namespace std;
+
+class Product
+{
+	int id;
+	int price;
+	int amount;
 	string name;
-	double priceforstack;
-	double priceforfew;
-	double tax; // 5% is 0.05
-	long int amount;
 	public:
-		Product(const string,const double,const double,const double,const long int);
-
+		Product(void);
+		Product(int ID,int Price,int Amount,string Name){
+			id = ID;
+			price = Price;
+			amount = Amount;
+			name = Name;
+		}
+		string getName(){ return name; }
+		int getID(){ return id; }
+		int getPrice(){ return price; }
+		int getAmount(){ return amount; }
 };
+

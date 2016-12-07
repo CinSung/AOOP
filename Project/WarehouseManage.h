@@ -1,8 +1,8 @@
 #pragma once
-
-class WarehouseManage{
-  PurchaseManage purchasemanage;
-  Product product;
-  Package package;
-
+#include "purchasemanage.h"
+class WarehouseManage : public PurchaseManage
+{
+	public:
+		WarehouseManage(void);
 };
+

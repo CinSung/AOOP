@@ -1,0 +1,40 @@
+﻿Build started 12/7/2016 8:34:59 PM.
+     1>Project "C:\Users\me\Documents\GitHub\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Project.cpp /clr:nostdlib 
+         Project.cpp
+     1>c:\users\me\documents\github\aoop\project\Form1.h(134): warning C4018: '<' : signed/unsigned mismatch
+         All outputs are up-to-date.
+       CoreResGen:
+         No resources are out of date with respect to their source files. Skipping resource generation.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\me\Documents\GitHub\AOOP\Release\Project.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\Project.Form1.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Release\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\me\Documents\GitHub\AOOP\Release\Project.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\EPayment.obj
+         Release\Package.obj
+         Release\Product.obj
+         Release\Project.obj
+         Release\PurchaseManage.obj
+         Release\stdafx.obj
+         Release\Supplier.obj
+         Release\WarehouseManage.obj
+         Release\WarehouseManageUI.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Project.vcxproj -> C:\Users\me\Documents\GitHub\AOOP\Release\Project.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\me\Documents\GitHub\AOOP\Release\Project.exe;#1" /manifest Release\Project.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Project.unsuccessfulbuild".
+         Touching "Release\Project.lastbuildstate".
+     1>Done Building Project "C:\Users\me\Documents\GitHub\AOOP\Project\Project.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.60

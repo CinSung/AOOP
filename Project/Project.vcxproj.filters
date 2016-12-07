@@ -48,6 +48,9 @@
     <ClCompile Include="WarehouseManageUI.cpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+    <ClCompile Include="Supplier.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -116,6 +119,9 @@
     <ClInclude Include="WarehouseManageUI.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="Supplier.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -124,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resX">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseManageUI.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
   </ItemGroup>

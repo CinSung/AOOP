@@ -1,9 +1,9 @@
 #pragma once
 
 #include "stdafx.h"
+using namespace std;
 
-class Package
-{
+class Package{
 	long int ID;
 	struct{
 		unsigned int Month;
@@ -11,23 +11,23 @@ class Package
 		int Year;
 	}InTime,OutTime;
 	bool retrieved;
-	char name[50];
-	char note[500];
+	string name;
+	string note;
 public:
 	Package(void);
-	Package(long int,unsigned int,unsigned int,unsigned int,char *);
+	Package(long int,unsigned int,unsigned int,unsigned int,string = "");
 	unsigned int rDay(){ return InTime.Day; }
 	unsigned int rMonth(){ return InTime.Month; }
 	unsigned int rYear(){ return InTime.Year; }
 	unsigned int oDay(){ return OutTime.Day; }
 	unsigned int oMonth(){ return OutTime.Month; }
 	unsigned int oYear(){ return OutTime.Year; }
-	char *getNote(){ return note; }
-	char *getName(){ return name; }
-	bool getStatus(){ return status; }
+	string getNote(){ return note; }
+	string getName(){ return name; }
+	bool getStatus(){ return retrieved; }
 
-	void Retrieve(char *Note = NULL);
-	void Retrieve(unsigned int,unsigned int,unsigned int,char * = NULL);
+	void Retrieve(string Note = "");
+	void Retrieve(unsigned int,unsigned int,unsigned int,string = "");
 
 };
 

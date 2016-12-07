@@ -15,17 +15,17 @@ Package::Package(void)
 	long int ID = 0000000;
 	retrieved = false;
 }
-Package::Package(long int id,unsigned int day,unsigned int month,unsigned int year,char *Name){
-	strcpy(name,Name);
+Package::Package(long int id,unsigned int day,unsigned int month,unsigned int year,string Name){
+	name = Name;
 	ID = id;
 	InTime.Year = year;
 	InTime.Month = month;
 	InTime.Day = day;
 	retrieved = false;
 }
-void Package::Retrieve(char *Note)
+void Package::Retrieve(string Note)
 {
-	strcpy(note,Note);
+	string note = Note;
 	time_t t = time(0);
 	struct tm now;
 	localtime_s( &now,&t);
@@ -35,8 +35,8 @@ void Package::Retrieve(char *Note)
 	retrieved = true;
 }
 
-void Package::Retrieve(unsigned int day,unsigned int month,unsigned int year,char *Note){
-	strcpy(note,Note);
+void Package::Retrieve(unsigned int day,unsigned int month,unsigned int year,string Note){
+	note = Note;
 	OutTime.Year = year;
 	OutTime.Month = month;
 	OutTime.Day = day;

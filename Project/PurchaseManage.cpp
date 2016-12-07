@@ -12,8 +12,8 @@ void MarshalString ( String ^ s, string& os ) {
 }  
 
 bool PurchaseManage::syncData(string username,string password){
-	String^ user = System::Convert::ToString(username.c_str());
-	String^ pswd = System::Convert::ToString(password.c_str());
+	String^ user = gcnew String(username.c_str());
+	String^ pswd = gcnew String(password.c_str());
 	String^ sqlQuery = "select * from suppliers";
 	String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+user+";password="+pswd+";database=MYSQL57";
 	MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);

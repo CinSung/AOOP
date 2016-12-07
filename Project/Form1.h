@@ -125,14 +125,13 @@ namespace Project {
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 String ^ buffer;
 				 string user,pass,name;
-				 listBox1->Items->Add(password->Text);
-				 listBox1->Items->Add(username->Text);
+//				 listBox1->Items->Add(password->Text);
+//				 listBox1->Items->Add(username->Text);
 				 MarshalString(password->Text,pass);
 				 MarshalString(username->Text,user);
 				 PurchaseManage manager(user,pass);
 				 vector <Supplier> list = manager.getSupplierList();
 				 for(int i=0;i < list.size();i++){
-//					name = 
 					 buffer = gcnew String(list[i].getCompanyName().c_str());
 					listBox1->Items->Add(buffer);
 				 }

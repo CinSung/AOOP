@@ -2,6 +2,7 @@
 
 #include "stdafx.h"
 #include "Form1.h"
+#include "MainWindow.h"
 
 using namespace Project;
 
@@ -13,6 +14,7 @@ int main(array<System::String ^> ^args)
 	Application::SetCompatibleTextRenderingDefault(false); 
 
 	// 建立主視窗並執行
-	Application::Run(gcnew Form1());
+	
+	Application::Run(gcnew MainWindow());
 	return 0;
 }

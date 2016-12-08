@@ -30,9 +30,6 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>原始程式檔</Filter>
     </ClCompile>
-    <ClCompile Include="EPayment.cpp">
-      <Filter>標頭檔</Filter>
-    </ClCompile>
     <ClCompile Include="Package.cpp">
       <Filter>原始程式檔</Filter>
     </ClCompile>
@@ -49,6 +46,9 @@
       <Filter>標頭檔</Filter>
     </ClCompile>
     <ClCompile Include="Supplier.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
       <Filter>原始程式檔</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,6 +120,12 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="Supplier.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Epayment.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

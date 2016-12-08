@@ -1,24 +1,45 @@
-﻿Build started 12/7/2016 8:45:50 PM.
-     1>Project "C:\Users\me\Documents\GitHub\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
+﻿已經開始建置於 2016/12/8 下午 07:05:36。
+     1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
      1>InitializeBuildStatus:
-         Creating "Debug\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         正在變更時間戳記 "Debug\Project.unsuccessfulbuild"。
        GenerateTargetFrameworkMonikerAttribute:
-       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(91,5): warning : 遺漏必要的檔案 "C:\PROGRAM FILES\MYSQL\CONNECTOR.NET 6.9\ASSEMBLIES\V4.0\MYSQL.DATA.DLL"。
+         先前的錯誤已轉換成警告，因為工作是以 ContinueOnError=true 呼叫。
        ClCompile:
-         All outputs are up-to-date.
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt PurchaseManage.cpp /clr:nostdlib 
-         PurchaseManage.cpp
-     1>PurchaseManage.cpp(15): warning C4800: 'const char *' : forcing value to bool 'true' or 'false' (performance warning)
-     1>PurchaseManage.cpp(16): warning C4800: 'const char *' : forcing value to bool 'true' or 'false' (performance warning)
-         All outputs are up-to-date.
+         所有輸出都是最新的。
+         所有輸出都是最新的。
+         所有輸出都是最新的。
+       ManagedIncrementalBuildPostProcessDependencyGraph:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 10.0\VC\BIN\1033\CLUI.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MSCORLIB.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.CORE.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DATA.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DRAWING.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.WINDOWS.FORMS.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.XML.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MICROSOFT.VISUALC.DLL' or one of its dependencies. 系統找不到指定的檔案。
        CoreResGen:
-         No resources are out of date with respect to their source files. Skipping resource generation.
+         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Debug\Project.Form1.resources MainWindow.resx,Debug\Project.MainWindow.resources WarehouseManageUI.resx,Debug\Project.WarehouseManageUI.resources
+         正在處理資源檔 "Form1.resX" 至 "Debug\Project.Form1.resources"。
+         正在處理資源檔 "MainWindow.resx" 至 "Debug\Project.MainWindow.resources"。
+         正在處理資源檔 "WarehouseManageUI.resx" 至 "Debug\Project.WarehouseManageUI.resources"。
        ResourceCompile:
-         All outputs are up-to-date.
+         所有輸出都是最新的。
        Link:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\me\Documents\GitHub\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\me\Documents\GitHub\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\New\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.MainWindow.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\New\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
          Debug\AssemblyInfo.obj
-         Debug\EPayment.obj
+         Debug\MainWindow.obj
          Debug\Package.obj
          Debug\Product.obj
          Debug\Project.obj
@@ -28,14 +49,14 @@
          Debug\WarehouseManage.obj
          Debug\WarehouseManageUI.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-         Project.vcxproj -> C:\Users\me\Documents\GitHub\AOOP\Debug\Project.exe
+         Project.vcxproj -> D:\Desktop\Project\New\AOOP\Debug\Project.exe
        Manifest:
-         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\me\Documents\GitHub\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Desktop\Project\New\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
        FinalizeBuildStatus:
-         Deleting file "Debug\Project.unsuccessfulbuild".
-         Touching "Debug\Project.lastbuildstate".
-     1>Done Building Project "C:\Users\me\Documents\GitHub\AOOP\Project\Project.vcxproj" (build target(s)).
+         正在刪除檔案 "Debug\Project.unsuccessfulbuild"。
+         正在變更時間戳記 "Debug\Project.lastbuildstate"。
+     1>專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj" (build 目標) 建置完成。
 
-Build succeeded.
+建置成功。
 
-Time Elapsed 00:00:04.12
+經過時間 00:00:01.16

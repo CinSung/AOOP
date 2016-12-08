@@ -1,3 +1,3 @@
-#include "StdAfx.h"
-#include "EPayment.h"
+#pragma once
+#include "Epayment.h"
 

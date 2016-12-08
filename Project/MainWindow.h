@@ -1,6 +1,9 @@
 #pragma once
 #include "Staff1.h"
 #include "StoreInfo.h"
+#include "Account1.h"
+#include "SaleSystemForm.h"
+#include "WareHouseForm.h"
 
 namespace Project {
 
@@ -91,6 +94,7 @@ namespace Project {
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"帳目";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MainWindow::button3_Click);
 			// 
 			// button4
 			// 
@@ -100,6 +104,7 @@ namespace Project {
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"銷售服務";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MainWindow::button4_Click);
 			// 
 			// button5
 			// 
@@ -109,6 +114,7 @@ namespace Project {
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"倉儲管理";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MainWindow::button5_Click);
 			// 
 			// MainWindow
 			// 
@@ -134,6 +140,18 @@ namespace Project {
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 				Form^ StoreInfoForm = gcnew StoreInfo;
 				StoreInfoForm->Show();
+		 }
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+				Form^ AccountForm = gcnew Account;
+				AccountForm->Show();
+		 }
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+				Form^ SaleForm = gcnew SaleSystemForm;
+				SaleForm->Show();
+		 }
+private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
+				Form^ WarehouseForm = gcnew WareHouseForm;
+				WarehouseForm->Show();
 		 }
 };
 }

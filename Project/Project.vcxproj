@@ -88,12 +88,14 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Account1.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Package.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Project.cpp" />
     <ClCompile Include="PurchaseManage.cpp" />
+    <ClCompile Include="SaleSystemForm.cpp" />
     <ClCompile Include="Staff1.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -101,11 +103,15 @@
     </ClCompile>
     <ClCompile Include="StoreInfo.cpp" />
     <ClCompile Include="Supplier.cpp" />
+    <ClCompile Include="WareHouseForm.cpp" />
     <ClCompile Include="WarehouseManage.cpp" />
     <ClCompile Include="WarehouseManageUI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
+    <ClInclude Include="Account1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Cash.h" />
     <ClInclude Include="CreditCard.h" />
     <ClInclude Include="Detail.h" />
@@ -126,6 +132,9 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="SaleManage.h" />
     <ClInclude Include="SaleSystem.h" />
+    <ClInclude Include="SaleSystemForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Staff.h" />
     <ClInclude Include="Staff1.h">
       <FileType>CppForm</FileType>
@@ -138,6 +147,9 @@
     </ClInclude>
     <ClInclude Include="StoreManage.h" />
     <ClInclude Include="Supplier.h" />
+    <ClInclude Include="WareHouseForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="WarehouseManage.h" />
     <ClInclude Include="WarehouseManageUI.h">
       <FileType>CppForm</FileType>
@@ -147,6 +159,9 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Account1.resx">
+      <DependentUpon>Account1.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resX">
       <DependentUpon>Form1.h</DependentUpon>
       <SubType>Designer</SubType>
@@ -154,11 +169,17 @@
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SaleSystemForm.resx">
+      <DependentUpon>SaleSystemForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff1.resx">
       <DependentUpon>Staff1.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StoreInfo.resx">
       <DependentUpon>StoreInfo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WareHouseForm.resx">
+      <DependentUpon>WareHouseForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WarehouseManageUI.resx">
       <DependentUpon>WarehouseManageUI.h</DependentUpon>

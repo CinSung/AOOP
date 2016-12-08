@@ -1,4 +1,4 @@
-﻿已經開始建置於 2016/12/8 下午 07:05:36。
+﻿已經開始建置於 2016/12/8 下午 07:32:55。
      1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
      1>InitializeBuildStatus:
          正在變更時間戳記 "Debug\Project.unsuccessfulbuild"。
@@ -8,7 +8,10 @@
          先前的錯誤已轉換成警告，因為工作是以 ContinueOnError=true 呼叫。
        ClCompile:
          所有輸出都是最新的。
-         所有輸出都是最新的。
+         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp /clr:nostdlib 
+         MainWindow.cpp
+         Project.cpp
+         正在產生程式碼...
          所有輸出都是最新的。
        ManagedIncrementalBuildPostProcessDependencyGraph:
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
@@ -30,21 +33,25 @@
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
          Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MICROSOFT.VISUALC.DLL' or one of its dependencies. 系統找不到指定的檔案。
        CoreResGen:
-         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Debug\Project.Form1.resources MainWindow.resx,Debug\Project.MainWindow.resources WarehouseManageUI.resx,Debug\Project.WarehouseManageUI.resources
+         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form1.resX,Debug\Project.Form1.resources MainWindow.resx,Debug\Project.MainWindow.resources Staff1.resx,Debug\Project.Staff1.resources StoreInfo.resx,Debug\Project.StoreInfo.resources WarehouseManageUI.resx,Debug\Project.WarehouseManageUI.resources
          正在處理資源檔 "Form1.resX" 至 "Debug\Project.Form1.resources"。
          正在處理資源檔 "MainWindow.resx" 至 "Debug\Project.MainWindow.resources"。
+         正在處理資源檔 "Staff1.resx" 至 "Debug\Project.Staff1.resources"。
+         正在處理資源檔 "StoreInfo.resx" 至 "Debug\Project.StoreInfo.resources"。
          正在處理資源檔 "WarehouseManageUI.resx" 至 "Debug\Project.WarehouseManageUI.resources"。
        ResourceCompile:
          所有輸出都是最新的。
        Link:
-         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\New\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.MainWindow.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\New\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\New\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.MainWindow.resources /ASSEMBLYRESOURCE:Debug\Project.Staff1.resources /ASSEMBLYRESOURCE:Debug\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\New\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
          Debug\AssemblyInfo.obj
          Debug\MainWindow.obj
          Debug\Package.obj
          Debug\Product.obj
          Debug\Project.obj
          Debug\PurchaseManage.obj
+         Debug\Staff1.obj
          Debug\stdafx.obj
+         Debug\StoreInfo.obj
          Debug\Supplier.obj
          Debug\WarehouseManage.obj
          Debug\WarehouseManageUI.obj
@@ -59,4 +66,4 @@
 
 建置成功。
 
-經過時間 00:00:01.16
+經過時間 00:00:01.47

@@ -1,4 +1,6 @@
 #pragma once
+#include "Staff1.h"
+#include "StoreInfo.h"
 
 namespace Project {
 
@@ -69,6 +71,7 @@ namespace Project {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"員工管理";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainWindow::button1_Click);
 			// 
 			// button2
 			// 
@@ -78,6 +81,7 @@ namespace Project {
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"超商資料";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MainWindow::button2_Click);
 			// 
 			// button3
 			// 
@@ -122,5 +126,14 @@ namespace Project {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form^ StaffForm = gcnew Staff;
+				 StaffForm->Show();
+
+			 }
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+				Form^ StoreInfoForm = gcnew StoreInfo;
+				StoreInfoForm->Show();
+		 }
+};
 }

@@ -51,6 +51,12 @@
     <ClCompile Include="MainWindow.cpp">
       <Filter>原始程式檔</Filter>
     </ClCompile>
+    <ClCompile Include="Staff1.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreInfo.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -128,6 +134,12 @@
     <ClInclude Include="Epayment.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="Staff1.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreInfo.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -139,6 +151,9 @@
       <Filter>資源檔</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="WarehouseManageUI.resx">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
   </ItemGroup>

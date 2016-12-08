@@ -131,7 +131,7 @@ namespace Project {
 				 MarshalString(username->Text,user);
 				 PurchaseManage manager(user,pass);
 				 vector <Supplier> list = manager.getSupplierList();
-				 for(int i=0;i < list.size();i++){
+				 for(unsigned i=0;i < list.size();i++){
 //					name = 
 					 buffer = gcnew String(list[i].getCompanyName().c_str());
 					listBox1->Items->Add(buffer);

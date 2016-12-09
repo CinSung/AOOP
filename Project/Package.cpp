@@ -23,6 +23,17 @@ Package::Package(long int id,unsigned int day,unsigned int month,unsigned int ye
 	InTime.Day = day;
 	retrieved = false;
 }
+Package::Package(long int id,unsigned int iday,unsigned int imonth,unsigned int iyear,unsigned int oday,unsigned int omonth,unsigned int oyear,string Name){
+	name = Name;
+	ID = id;
+	InTime.Year = iyear;
+	InTime.Month = imonth;
+	InTime.Day = iday;
+	OutTime.Year = oyear;
+	OutTime.Month = omonth;
+	OutTime.Day = oday;
+	retrieved = false;
+}
 void Package::Retrieve(string Note)
 {
 	string note = Note;

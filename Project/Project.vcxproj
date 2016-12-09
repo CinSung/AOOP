@@ -54,8 +54,6 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
@@ -89,6 +87,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="EPayment.cpp" />
+    <ClCompile Include="MYSQL.cpp" />
     <ClCompile Include="Package.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Project.cpp" />
@@ -112,6 +111,7 @@
     </ClInclude>
     <ClInclude Include="Icash.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="MYSQL.h" />
     <ClInclude Include="Package.h" />
     <ClInclude Include="Payment.h" />
     <ClInclude Include="Product.h" />

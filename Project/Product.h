@@ -5,21 +5,27 @@ using namespace std;
 
 class Product
 {
-	int id;
-	int price;
-	int amount;
+	long int id;
+	double priceforfew;
+	double priceforstack;
+	double tax;
+	long int amount;
 	string name;
 	public:
 		Product(void);
-		Product(int ID,int Price,int Amount,string Name){
+		Product(string Name,double PriceStack,double PriceFew,double Tax,long int Amt,long int ID){
 			id = ID;
-			price = Price;
-			amount = Amount;
+			priceforfew = PriceFew;
+			amount = Amt;
+			priceforstack = PriceStack;
+			tax = Tax;
 			name = Name;
 		}
 		string getName(){ return name; }
 		int getID(){ return id; }
-		int getPrice(){ return price; }
+		double getPriceFew(){ return priceforfew; }
+		double getPriceStack(){ return priceforstack; }
+		double getTax(){ return tax; }
 		int getAmount(){ return amount; }
 };
 

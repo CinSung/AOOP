@@ -16,6 +16,8 @@ class Package{
 public:
 	Package(void);
 	Package(long int,unsigned int,unsigned int,unsigned int,string = "");
+	Package(long int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,unsigned int,string = "");
+	long int getID(){ return ID; }
 	unsigned int rDay(){ return InTime.Day; }
 	unsigned int rMonth(){ return InTime.Month; }
 	unsigned int rYear(){ return InTime.Year; }

@@ -35,10 +35,10 @@ class MYSQL{
       vector <Supplier> getSupplier();
       vector <Package> getPackage();
       vector <Product> getProduct();
-  //    vector <Staff> getStaff();
-      bool insertSQL( const Supplier &);
-  //    bool insertSQL( const Package &);
-      bool insertSQL( const Product &);
+      vector <Staff> getStaff();
+      bool insertSQL( Supplier& );
+      bool insertSQL( Package &);
+      bool insertSQL(  Product &);
   //    bool insertSQL( const Staff &);
   //    bool insertSQL( const Account &);
   //    bool insertSQL( const storeInfo &);

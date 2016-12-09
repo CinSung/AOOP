@@ -3,6 +3,57 @@
 #include <vector>
 using namespace System::Windows::Forms;
 
+bool MYSQL::insertSQL(Supplier &supplier){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+
+  String^ sqlQuery = "insert into suppliers(id,itemAmount,address,companyName, productID) values (" + System::Convert::ToString(supplier.getID())+ ","+ System::Convert::ToString(supplier.getItemAmount()) + ",'"+ System::Convert::ToString(supplier.getAddress()) + "','"+
+  System::Convert::ToString(supplier.getCompanyName()) + "',"+
+  System::Convert::ToString(supplier.getItemID()) + ");";
+  MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+  return true;
+
+}
+
+bool MYSQL::insertSQL( Package &package){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+
+  String ^ retrieved;
+  if(package.getStatus())
+    retrieved = "1";
+  else
+    retrieved = "0";
+  String^ sqlQuery = "insert into packages(id,oday,omonth,oyear,iday,imonth,iyear, name,retrieved) values (" + System::Convert::ToString(package.id)+ ","+ System::Convert::ToString(package.getID()) + ","+
+  System::Convert::ToString(package.oDay()) + ","+
+  System::Convert::ToString(package.oMonth()) + ","+
+  System::Convert::ToString(package.oYear()) + ","+
+  System::Convert::ToString(package.rDay()) + ","+
+  System::Convert::ToString(package.rMonth()) + ","+
+  System::Convert::ToString(package.rYear()) + ",'"+
+  System::Convert::ToString(package.getName()) + "',"+
+  retrieved+ ");";
+  MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+  return true;
+}
+
+
+bool MYSQL::insertSQL( Product& product){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+
+  String^ sqlQuery = "insert into packages(name,priceforfew,priceforstack,tax,amount,id) values ('" + System::Convert::ToString(product.getName())+ "',"+ System::Convert::ToString(product.getPriceFew()) + ",'"+ System::Convert::ToString(product.getPriceStack()) + "','"+
+  System::Convert::ToString(product.getTax()) + "',"+
+  System::Convert::ToString(product.getAmount()) + ");";
+  MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+  return true;
+}
 vector <Supplier> MYSQL::getSupplier(){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());
@@ -89,13 +140,41 @@ vector <Package> MYSQL::getPackage(){
           id = dataReader->GetInt32(0); //id
           oday = dataReader->GetInt32(1); //itemAmt
           omonth = dataReader->GetInt32(2); //itemID
-		  oyear = dataReader->GetInt32(3);
-		  iday = dataReader->GetInt32(4); //itemAmt
+          oyear = dataReader->GetInt32(3);
+          iday = dataReader->GetInt32(4); //itemAmt
           imonth = dataReader->GetInt32(5); //itemID
-		  iyear = dataReader->GetInt32(6);
-		  MarshalString(System::Convert::ToString(dataReader->GetString(7)),name); //address
-  
-  //        result.push_back(Supplier(li2,str1,str2,i2,li1));
+          iyear = dataReader->GetInt32(6);
+          MarshalString(System::Convert::ToString(dataReader->GetString(7)),name); //address
+          result.push_back(Package(id,oday,omonth,oyear,iday,imonth,iyear,name));
+      }
+    }
+  }catch(Exception ^e){
+//    return false;
+    MessageBox::Show(e->Message);
+  }
+  return result;
+}
+
+vector <Staff> MYSQL::getStaff(){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ sqlQuery = "select * from staff";
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+  MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+  MySqlDataReader^ dataReader;
+  vector <Staff> result;
+  long int salary;
+  string name,position;
+  try{
+    conn->Open();
+    dataReader = connCmd->ExecuteReader();
+    if(dataReader->HasRows){
+      while(dataReader->Read()){
+          MarshalString(System::Convert::ToString(dataReader->GetString(0)),name);
+          MarshalString(System::Convert::ToString(dataReader->GetString(1)),position);
+          salary = dataReader->GetInt32(2);
+          result.push_back(Staff(name,position,salary));
       }
     }
   }catch(Exception ^e){

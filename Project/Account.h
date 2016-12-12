@@ -2,5 +2,6 @@
 class Account
 {
 	unsigned cash;
-	unsigned ecommercial;
+	unsigned icash;
+	unsigned creditcard;
 };

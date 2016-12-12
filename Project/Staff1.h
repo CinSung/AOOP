@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+using namespace std;
 
 namespace Project {
 
@@ -128,10 +130,21 @@ namespace Project {
 			label2->Visible=false;
 			button1->Visible=false;
 		}
+		void MarshalString ( String ^ s, string& os ) {  
+			using namespace Runtime::InteropServices;  
+			const char* chars =   
+				(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();  
+			os = chars;  
+			Marshal::FreeHGlobal(IntPtr((void*)chars));  
+		}  
 
 #pragma endregion
+
+
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 bool success=1;
+
+				 
 				 
 				 if (!success)	return;
 				 hide_login_and_showinfo();

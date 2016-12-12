@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/ui
 ﻿已經開始建置於 2016/12/8 下午 09:07:00。
      1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
 =======
@@ -15,6 +18,10 @@
 <<<<<<< HEAD
          所有輸出都是最新的。
          所有輸出都是最新的。
+<<<<<<< HEAD
+=======
+         所有輸出都是最新的。
+>>>>>>> refs/heads/ui
          所有輸出都是最新的。
        ManagedIncrementalBuildPostProcessDependencyGraph:
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
@@ -47,10 +54,14 @@
          所有輸出都是最新的。
        Link:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/heads/ui
          所有輸出都是最新的。
          Project.vcxproj -> D:\Desktop\Project\New\AOOP\Debug\Project.exe
        MetaGen:
        將略過目標 "MetaGen"，因為所有輸出檔對於其輸入檔而言都已更新。
+<<<<<<< HEAD
        FinalizeBuildStatus:
          正在刪除檔案 "Debug\Project.unsuccessfulbuild"。
          正在變更時間戳記 "Debug\Project.lastbuildstate"。
@@ -71,6 +82,8 @@
          Project.vcxproj -> C:\Users\me\Desktop\AOOP\Debug\Project.exe
        Manifest:
          C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\me\Desktop\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
+=======
+>>>>>>> refs/heads/ui
        FinalizeBuildStatus:
          Deleting file "Debug\Project.unsuccessfulbuild".
          Touching "Debug\Project.lastbuildstate".
@@ -80,7 +93,11 @@
 建置成功。
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 經過時間 00:00:00.27
 =======
 Time Elapsed 00:00:03.59
 >>>>>>> origin/master
+=======
+經過時間 00:00:00.27
+>>>>>>> refs/heads/ui

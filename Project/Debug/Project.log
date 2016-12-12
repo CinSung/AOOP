@@ -1,5 +1,10 @@
-﻿已經開始建置於 2016/12/8 下午 08:06:22。
+<<<<<<< HEAD
+﻿已經開始建置於 2016/12/8 下午 09:07:00。
      1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
+=======
+﻿Build started 12/7/2016 10:54:44 PM.
+     1>Project "C:\Users\me\Desktop\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
+>>>>>>> origin/master
      1>InitializeBuildStatus:
          由於指定了 "AlwaysCreate"，因此正在建立 "Debug\Project.unsuccessfulbuild"。
        GenerateTargetFrameworkMonikerAttribute:
@@ -7,11 +12,9 @@
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(91,5): warning : 遺漏必要的檔案 "C:\PROGRAM FILES\MYSQL\CONNECTOR.NET 6.9\ASSEMBLIES\V4.0\MYSQL.DATA.DLL"。
          先前的錯誤已轉換成警告，因為工作是以 ContinueOnError=true 呼叫。
        ClCompile:
+<<<<<<< HEAD
          所有輸出都是最新的。
-         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp /clr:nostdlib 
-         MainWindow.cpp
-         Project.cpp
-         正在產生程式碼...
+         所有輸出都是最新的。
          所有輸出都是最新的。
        ManagedIncrementalBuildPostProcessDependencyGraph:
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
@@ -32,37 +35,52 @@
          Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.XML.DLL' or one of its dependencies. 系統找不到指定的檔案。
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
          Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MICROSOFT.VISUALC.DLL' or one of its dependencies. 系統找不到指定的檔案。
+=======
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt PurchaseManage.cpp /clr:nostdlib 
+         PurchaseManage.cpp
+         All outputs are up-to-date.
+>>>>>>> origin/master
        CoreResGen:
-         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile MainWindow.resx,Debug\Project.MainWindow.resources
-         正在處理資源檔 "MainWindow.resx" 至 "Debug\Project.MainWindow.resources"。
+         相對於資源的來源檔案，並沒有資源過期。將略過產生資源。
        ResourceCompile:
          所有輸出都是最新的。
        Link:
-         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\New\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Account1.resources /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.MainWindow.resources /ASSEMBLYRESOURCE:Debug\Project.SaleSystemForm.resources /ASSEMBLYRESOURCE:Debug\Project.Staff1.resources /ASSEMBLYRESOURCE:Debug\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Debug\Project.WareHouseForm.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\New\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
-         Debug\Account1.obj
-         Debug\AssemblyInfo.obj
-         Debug\MainWindow.obj
-         Debug\Package.obj
-         Debug\Product.obj
-         Debug\Project.obj
-         Debug\PurchaseManage.obj
-         Debug\SaleSystemForm.obj
-         Debug\Staff1.obj
-         Debug\stdafx.obj
-         Debug\StoreInfo.obj
-         Debug\Supplier.obj
-         Debug\WareHouseForm.obj
-         Debug\WarehouseManage.obj
-         Debug\WarehouseManageUI.obj
-         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+<<<<<<< HEAD
+         所有輸出都是最新的。
          Project.vcxproj -> D:\Desktop\Project\New\AOOP\Debug\Project.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Desktop\Project\New\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
+       MetaGen:
+       將略過目標 "MetaGen"，因為所有輸出檔對於其輸入檔而言都已更新。
        FinalizeBuildStatus:
          正在刪除檔案 "Debug\Project.unsuccessfulbuild"。
          正在變更時間戳記 "Debug\Project.lastbuildstate"。
      1>專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj" (build 目標) 建置完成。
+=======
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\me\Desktop\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\me\Desktop\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\EPayment.obj
+         Debug\Package.obj
+         Debug\Product.obj
+         Debug\Project.obj
+         Debug\PurchaseManage.obj
+         Debug\stdafx.obj
+         Debug\Supplier.obj
+         Debug\WarehouseManage.obj
+         Debug\WarehouseManageUI.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Project.vcxproj -> C:\Users\me\Desktop\AOOP\Debug\Project.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\me\Desktop\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Project.unsuccessfulbuild".
+         Touching "Debug\Project.lastbuildstate".
+     1>Done Building Project "C:\Users\me\Desktop\AOOP\Project\Project.vcxproj" (build target(s)).
+>>>>>>> origin/master
 
 建置成功。
 
-經過時間 00:00:01.56
+<<<<<<< HEAD
+經過時間 00:00:00.27
+=======
+Time Elapsed 00:00:03.59
+>>>>>>> origin/master

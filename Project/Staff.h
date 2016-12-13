@@ -7,5 +7,12 @@ class Staff
 {
 	string name;
 	string position;
-	unsigned int salary;
+	unsigned int salary;	
+	public:
+		Staff(){
+			salary = 0;
+			position = "none";
+		};
+		Staff(string name,string post,unsigned int salary):name(name),position(post),salary(salary){}
+
 };

@@ -2,15 +2,15 @@
 #include "MYSQL.h"
 #include <vector>
 using namespace System::Windows::Forms;
-
 bool MYSQL::insertSQL(Supplier &supplier){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());
   String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
   MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
-
-  String^ sqlQuery = "insert into suppliers(id,itemAmount,address,companyName, productID) values (" + System::Convert::ToString(supplier.getID())+ ","+ System::Convert::ToString(supplier.getItemAmount()) + ",'"+ System::Convert::ToString(supplier.getAddress()) + "','"+
-  System::Convert::ToString(supplier.getCompanyName()) + "',"+
+  String^ compName = gcnew String(supplier.getCompanyName().c_str());
+  String^ address = gcnew String(supplier.getAddress().c_str());
+  String^ sqlQuery = "insert into suppliers(id,itemAmount,address,companyName, productID) values (" + System::Convert::ToString(supplier.getID())+ ","+ System::Convert::ToString(supplier.getItemAmount()) + ",'"+ address + "','"+
+  compName + "',"+
   System::Convert::ToString(supplier.getItemID()) + ");";
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   return true;
@@ -21,6 +21,7 @@ bool MYSQL::insertSQL( Package &package){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());
   String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  String^ name = gcnew String(package.getName().c_str());
   MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
 
   String ^ retrieved;
@@ -28,14 +29,15 @@ bool MYSQL::insertSQL( Package &package){
     retrieved = "1";
   else
     retrieved = "0";
-  String^ sqlQuery = "insert into packages(id,oday,omonth,oyear,iday,imonth,iyear, name,retrieved) values (" + System::Convert::ToString(package.id)+ ","+ System::Convert::ToString(package.getID()) + ","+
+  String^ sqlQuery = "insert into packages(id,oday,omonth,oyear,iday,imonth,iyear, name,retrieved) values (" + 
+  System::Convert::ToString(package.getID()) + ","+
   System::Convert::ToString(package.oDay()) + ","+
   System::Convert::ToString(package.oMonth()) + ","+
   System::Convert::ToString(package.oYear()) + ","+
   System::Convert::ToString(package.rDay()) + ","+
   System::Convert::ToString(package.rMonth()) + ","+
   System::Convert::ToString(package.rYear()) + ",'"+
-  System::Convert::ToString(package.getName()) + "',"+
+  name + "',"+
   retrieved+ ");";
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   return true;
@@ -47,8 +49,11 @@ bool MYSQL::insertSQL( Product& product){
   String^ Password = gcnew String(password.c_str());
   String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
   MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
-
-  String^ sqlQuery = "insert into packages(name,priceforfew,priceforstack,tax,amount,id) values ('" + System::Convert::ToString(product.getName())+ "',"+ System::Convert::ToString(product.getPriceFew()) + ",'"+ System::Convert::ToString(product.getPriceStack()) + "','"+
+  String^ prodName = gcnew String(product.getName().c_str());
+  String^ sqlQuery = "insert into packages(name,priceforfew,priceforstack,tax,amount,id) values ('" + \
+  prodName+ "',"+ 
+  System::Convert::ToString(product.getPriceFew()) + ",'"+ 
+  System::Convert::ToString(product.getPriceStack()) + "','"+
   System::Convert::ToString(product.getTax()) + "',"+
   System::Convert::ToString(product.getAmount()) + ");";
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);

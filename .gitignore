@@ -7,7 +7,10 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-
+Project\Debug\*.tlog
+Project\Debug\*.obj
+Project\Debug\*.pch
+Project\Debug\*.pdb
 # Windows Installer files
 *.cab
 *.msi

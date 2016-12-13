@@ -28,10 +28,17 @@ class MYSQL{
   	}
     	bool security(String ^input); //prevent sql injection attack
     public:
+	  MYSQL();
       MYSQL(string Username,string Password){
         username = Username;
         password = Password;
       }
+	  void setUser(string user){
+		username = user;
+	  }
+	  void setPassword(string pass){
+		password = pass;
+	  }
       vector <Supplier> getSupplier();
       vector <Package> getPackage();
       vector <Product> getProduct();

@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include "Supplier.h"
+#include "MYSQL.h"
 #include "PurchaseManage.h"
 #include <vector>
 using namespace std;
@@ -45,6 +46,7 @@ namespace Project {
 	private: System::Windows::Forms::TextBox^  password;
 
 	private: System::Windows::Forms::ListBox^  listBox1;
+	private: System::ComponentModel::BackgroundWorker^  backgroundWorker1;
 
 
 	private:
@@ -71,6 +73,7 @@ namespace Project {
 			this->username = (gcnew System::Windows::Forms::TextBox());
 			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -106,6 +109,10 @@ namespace Project {
 			this->listBox1->Size = System::Drawing::Size(362, 173);
 			this->listBox1->TabIndex = 3;
 			// 
+			// backgroundWorker1
+			// 
+			this->backgroundWorker1->DoWork += gcnew System::ComponentModel::DoWorkEventHandler(this, &Form1::backgroundWorker1_DoWork);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -129,15 +136,19 @@ namespace Project {
 //				 listBox1->Items->Add(username->Text);
 				 MarshalString(password->Text,pass);
 				 MarshalString(username->Text,user);
-				 PurchaseManage manager(user,pass);
-				 vector <Supplier> list = manager.getSupplierList();
-
+				 
+				 MYSQL manager(user,pass);
+				 vector<Supplier> list = manager.getSupplier();
 				 for(int i=0;i < list.size();i++){
 
 					 buffer = gcnew String(list[i].getCompanyName().c_str());
 					listBox1->Items->Add(buffer);
 				 }
 	 }
+		private: System::Void backgroundWorker1_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
+
+		 }
+
 };
 }
 

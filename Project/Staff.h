@@ -1,15 +1,18 @@
 #pragma once
+
+#include <string>
+using namespace std;
+
 class Staff
 {
 	string name;
 	string position;
-	unsigned salary;
+	unsigned int salary;	
+	public:
+		Staff(){
+			salary = 0;
+			position = "none";
+		};
+		Staff(string name,string post,unsigned int salary):name(name),position(post),salary(salary){}
 
-public:
-	Staff (string _name,string _position,unsigned _salary)
-	{
-		name=_name;
-		position=_position;
-		salary=_salary;
-	}
 };

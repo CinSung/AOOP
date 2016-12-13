@@ -6,20 +6,31 @@ using namespace std;
 class Product
 {
 	int id;
-	int price;
+	double priceForStack;
+	double priceForFew;
 	int amount;
+	double tax;
 	string name;
 	public:
 		Product(void);
 		Product(int ID,int Price,int Amount,string Name){
 			id = ID;
-			price = Price;
+			priceForFew = Price;
 			amount = Amount;
 			name = Name;
 		}
+		Product(string name,double priceStack,double priceFew,double Tax,int Amount,int ID ):
+			name(name),
+			priceForStack(priceStack),
+			priceForFew(priceFew),
+			id(ID),
+			amount(Amount),
+			tax(Tax){}
 		string getName(){ return name; }
 		int getID(){ return id; }
-		int getPrice(){ return price; }
+		double getPriceFew(){ return priceForFew; }
+		double getTax(){ return tax; }
+		double getPriceStack(){ return priceForStack; }
 		int getAmount(){ return amount; }
 };
 

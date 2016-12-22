@@ -1,4 +1,5 @@
 #pragma once
+#include "WarehouseDashboard.h"
 
 namespace Project {
 
@@ -64,54 +65,61 @@ namespace Project {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(80, 80);
+			this->label1->Location = System::Drawing::Point(55, 62);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(71, 15);
+			this->label1->Size = System::Drawing::Size(61, 13);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Username: ";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(80, 150);
+			this->label2->Location = System::Drawing::Point(55, 92);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(64, 15);
+			this->label2->Size = System::Drawing::Size(56, 13);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Password:";
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(157, 80);
+			this->textBox1->Location = System::Drawing::Point(113, 62);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(162, 25);
+			this->textBox1->Size = System::Drawing::Size(122, 20);
 			this->textBox1->TabIndex = 2;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(157, 150);
+			this->textBox2->Location = System::Drawing::Point(113, 92);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(162, 25);
+			this->textBox2->Size = System::Drawing::Size(122, 20);
 			this->textBox2->TabIndex = 3;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(356, 152);
+			this->button1->Location = System::Drawing::Point(258, 62);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(72, 50);
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Log In";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &WareHouseForm::button1_Click);
 			// 
 			// WareHouseForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(622, 435);
+			this->ClientSize = System::Drawing::Size(416, 174);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->Name = L"WareHouseForm";
 			this->Text = L"Warehouse";
 			this->ResumeLayout(false);
@@ -119,5 +127,9 @@ namespace Project {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form^ warehouseDashboard = gcnew WarehouseDashboard;
+				 warehouseDashboard->Show();
+	}
+};
 }

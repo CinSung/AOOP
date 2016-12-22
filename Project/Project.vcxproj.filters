@@ -75,6 +75,9 @@
     <ClCompile Include="WarehouseChart.cpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+    <ClCompile Include="WarehouseDashboard.cpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -173,6 +176,9 @@
     <ClInclude Include="WarehouseChart.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="WarehouseDashboard.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -202,6 +208,9 @@
       <Filter>資源檔</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="WareHouseForm.resx">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseChart.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
   </ItemGroup>

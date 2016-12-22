@@ -14,7 +14,6 @@ bool MYSQL::insertSQL(Supplier &supplier){
   System::Convert::ToString(supplier.getItemID()) + ");";
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   return true;
-
 }
 
 bool MYSQL::insertSQL( Package &package){
@@ -59,6 +58,34 @@ bool MYSQL::insertSQL( Product& product){
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   return true;
 }
+bool MYSQL::sendCommand(const string conn){
+	String^ sqlCommand = gcnew String(conn.c_str());
+	String ^Username = gcnew String(username.c_str());
+	String^ Password = gcnew String(password.c_str());
+	String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+	MySqlConnection ^connect; 
+	MySqlCommand ^cmd;     
+	MySqlDataReader ^reader;
+	//connectstr = "Network Address="+server+";"+"Persist Security Info=no;"+"User Name="+userID+";"+"Password="+password+";";
+	connect = gcnew MySqlConnection( connectionInfo );
+	try			
+	{ 
+		connect->Open();
+		cmd = gcnew MySqlCommand( sqlCommand , connect );
+		reader = cmd->ExecuteReader();
+	 }
+	catch( Exception ^ex )
+	{ 
+		//System::Windows::Forms::DialogResult result;
+		//result = MessageBox::Show( ex->ToString() );
+		connect->Close();
+		delete cmd;
+		return false;
+	}
+	return true;
+			 
+}
+
 vector <Supplier> MYSQL::getSupplier(){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());

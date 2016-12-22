@@ -46,6 +46,7 @@ class MYSQL{
       bool insertSQL( Supplier& );
       bool insertSQL( Package &);
       bool insertSQL(  Product &);
+	  bool sendCommand(const string );
   //    bool insertSQL( const Staff &);
   //    bool insertSQL( const Account &);
   //    bool insertSQL( const storeInfo &);

@@ -105,6 +105,7 @@
     <ClCompile Include="StoreInfo.cpp" />
     <ClCompile Include="Supplier.cpp" />
     <ClCompile Include="WarehouseChart.cpp" />
+    <ClCompile Include="WarehouseDashboard.cpp" />
     <ClCompile Include="WareHouseForm.cpp" />
     <ClCompile Include="WarehouseManage.cpp" />
     <ClCompile Include="WarehouseManageUI.cpp" />
@@ -153,6 +154,9 @@
     <ClInclude Include="WarehouseChart.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="WarehouseDashboard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="WareHouseForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -186,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WarehouseChart.resx">
       <DependentUpon>WarehouseChart.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseDashboard.resx">
+      <DependentUpon>WarehouseDashboard.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WareHouseForm.resx">
       <DependentUpon>WareHouseForm.h</DependentUpon>

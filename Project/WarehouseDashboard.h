@@ -12,13 +12,14 @@ namespace Project {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	
 	/// <summary>
 	/// Summary for WarehouseDashboard
 	/// </summary>
 	public ref class WarehouseDashboard : public System::Windows::Forms::Form
 	{
 	public:
+
 		WarehouseDashboard(void)
 		{
 			InitializeComponent();
@@ -29,6 +30,7 @@ namespace Project {
 				String ^ buffer = gcnew String(suppliers[i].getCompanyName().c_str());
 				selectBox->Items->Add(buffer);
 			}
+			listBox1->Items->Add(textBox1->Text +" ");
 			selectBox->EndUpdate();
 			//
 			//TODO: Add the constructor code here
@@ -62,8 +64,26 @@ namespace Project {
 		/// </summary>
 		String ^logs;
 		String ^selected;
-		System::ComponentModel::Container ^components;
-
+	private: System::Windows::Forms::TextBox^  textBox1;
+	private: System::Windows::Forms::TextBox^  textBox2;
+			 System::ComponentModel::Container ^components;
+	public:
+		property System::String^ username{
+			System::String^ get(){
+				return textBox1->Text;
+			}
+			void set(System::String^ text){
+				textBox1->Text=text;
+			}
+		}
+		property System::String^ password{
+			System::String^ get(){
+				return textBox2->Text;
+			}
+			void set(System::String^ text){
+				textBox2->Text=text;
+			}
+		}
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// Required method for Designer support - do not modify
@@ -77,6 +97,8 @@ namespace Project {
 			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
 			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
 			this->backgroundWorker2 = (gcnew System::ComponentModel::BackgroundWorker());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// selectBox
@@ -126,11 +148,28 @@ namespace Project {
 			this->backgroundWorker2->WorkerSupportsCancellation = true;
 			this->backgroundWorker2->DoWork += gcnew System::ComponentModel::DoWorkEventHandler(this, &WarehouseDashboard::backgroundWorker2_DoWork);
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(23, 74);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(100, 20);
+			this->textBox1->TabIndex = 4;
+			this->textBox1->Visible = false;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(148, 74);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(100, 20);
+			this->textBox2->TabIndex = 5;
+			// 
 			// WarehouseDashboard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(528, 304);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->listBox1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -138,6 +177,7 @@ namespace Project {
 			this->Name = L"WarehouseDashboard";
 			this->Text = L"WarehouseDashboard";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -159,7 +199,12 @@ namespace Project {
 				
 	}
 	private: System::Void backgroundWorker2_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
-			MYSQL manager("root","aoop2016");
+			string password;
+			string username;
+			MarshalString ( textBox1->Text, username );
+			MarshalString ( textBox2->Text, password ;
+				 
+			MYSQL manager(username,password);
 			vector <Supplier> suppliers = manager.getSupplier();
 			vector <Product> products = manager.getProduct();
 			string selectedCompany;

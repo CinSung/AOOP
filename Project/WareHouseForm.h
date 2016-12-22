@@ -23,7 +23,7 @@ namespace Project {
 			//TODO: 在此加入建構函式程式碼
 			//
 		}
-
+	
 	protected:
 		/// <summary>
 		/// 清除任何使用中的資源。
@@ -41,6 +41,7 @@ namespace Project {
 	public: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label1;
+
 
 	private:
 		/// <summary>
@@ -128,7 +129,9 @@ namespace Project {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 Form^ warehouseDashboard = gcnew WarehouseDashboard;
+				WarehouseDashboard^ warehouseDashboard = gcnew WarehouseDashboard;
+				warehouseDashboard->username = textBox1->Text;
+				warehouseDashboard->username = textBox2->Text;
 				 warehouseDashboard->Show();
 	}
 };

@@ -162,6 +162,7 @@ namespace Project {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(100, 20);
 			this->textBox2->TabIndex = 5;
+			this->textBox2->Visible = false;
 			// 
 			// WarehouseDashboard
 			// 
@@ -202,7 +203,7 @@ namespace Project {
 			string password;
 			string username;
 			MarshalString ( textBox1->Text, username );
-			MarshalString ( textBox2->Text, password ;
+			MarshalString ( textBox2->Text, password );
 				 
 			MYSQL manager(username,password);
 			vector <Supplier> suppliers = manager.getSupplier();

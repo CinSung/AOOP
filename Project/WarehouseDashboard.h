@@ -30,7 +30,7 @@ namespace Project {
 				String ^ buffer = gcnew String(suppliers[i].getCompanyName().c_str());
 				selectBox->Items->Add(buffer);
 			}
-			listBox1->Items->Add(" ");
+			listBox1->Items->Add(textBox1->Text +" ");
 			selectBox->EndUpdate();
 			//
 			//TODO: Add the constructor code here
@@ -62,9 +62,8 @@ namespace Project {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::String ^logs;
-		System::String ^selected;
-
+		String ^logs;
+		String ^selected;
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::TextBox^  textBox2;
 			 System::ComponentModel::Container ^components;
@@ -77,7 +76,6 @@ namespace Project {
 				textBox1->Text=text;
 			}
 		}
-	public:
 		property System::String^ password{
 			System::String^ get(){
 				return textBox2->Text;
@@ -152,7 +150,7 @@ namespace Project {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(547, 73);
+			this->textBox1->Location = System::Drawing::Point(23, 74);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 20);
 			this->textBox1->TabIndex = 4;
@@ -160,17 +158,16 @@ namespace Project {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(672, 73);
+			this->textBox2->Location = System::Drawing::Point(148, 74);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(100, 20);
 			this->textBox2->TabIndex = 5;
-			this->textBox2->Visible = false;
 			// 
 			// WarehouseDashboard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(535, 304);
+			this->ClientSize = System::Drawing::Size(528, 304);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->listBox1);
@@ -205,7 +202,7 @@ namespace Project {
 			string password;
 			string username;
 			MarshalString ( textBox1->Text, username );
-			MarshalString ( textBox2->Text, password );
+			MarshalString ( textBox2->Text, password ;
 				 
 			MYSQL manager(username,password);
 			vector <Supplier> suppliers = manager.getSupplier();

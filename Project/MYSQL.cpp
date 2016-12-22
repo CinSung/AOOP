@@ -2,6 +2,8 @@
 #include "MYSQL.h"
 #include <vector>
 using namespace System::Windows::Forms;
+
+
 bool MYSQL::insertSQL(Supplier &supplier){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());
@@ -41,7 +43,34 @@ bool MYSQL::insertSQL( Package &package){
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   return true;
 }
-
+bool MYSQL::updatePackage(int PackageID,string collectorName,int oDay,int oMonth,int oYear,bool retrieved){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  MySqlCommand^ connCmd;
+  MySqlConnection^ conn;
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+	try{
+	  conn = gcnew MySqlConnection(connectionInfo);
+	  String^ name = gcnew String(collectorName.c_str());
+	  String ^ status;
+	  if(retrieved)
+		status = "1";
+	  else
+		status = "0";
+	  String ^sqlQuery = "update packages set name = "+name+
+		  ", oday = "+System::Convert::ToString(oDay)+
+		  ", omonth = "+System::Convert::ToString(oMonth)+
+		  ", oyear = "+System::Convert::ToString(oYear)+
+		  ", retrieved = "+status+
+		  "where id = "+System::Convert::ToString(PackageID)+" limit 1;";
+	   connCmd = gcnew MySqlCommand(sqlQuery,conn);
+	}
+	catch(Exception ^ex){
+		delete connCmd;
+		return false;
+	}
+   return true;
+}
 
 bool MYSQL::insertSQL( Product& product){
   String ^Username = gcnew String(username.c_str());
@@ -58,6 +87,25 @@ bool MYSQL::insertSQL( Product& product){
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   return true;
 }
+bool MYSQL::updateProduct(Product& product,int item2Add){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  MySqlCommand^ connCmd;
+  MySqlDataReader ^reader; 
+  MySqlConnection^ conn;
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  int total = (int)product.getAmount()+item2Add;
+	  conn = gcnew MySqlConnection(connectionInfo);
+	  conn->Open();
+	  String ^sqlQuery = "update products set amount = "+System::Convert::ToString(total)+
+		  " where id = "+System::Convert::ToString(product.getID())+";";
+	   connCmd = gcnew MySqlCommand(sqlQuery,conn);
+	   reader = connCmd->ExecuteReader();
+	   conn->Close();
+
+
+   return true;
+}
 bool MYSQL::sendCommand(const string conn){
 	String^ sqlCommand = gcnew String(conn.c_str());
 	String ^Username = gcnew String(username.c_str());
@@ -73,8 +121,7 @@ bool MYSQL::sendCommand(const string conn){
 		connect->Open();
 		cmd = gcnew MySqlCommand( sqlCommand , connect );
 		reader = cmd->ExecuteReader();
-	 }
-	catch( Exception ^ex )
+	 }catch(Exception ^e)
 	{ 
 		//System::Windows::Forms::DialogResult result;
 		//result = MessageBox::Show( ex->ToString() );
@@ -82,6 +129,7 @@ bool MYSQL::sendCommand(const string conn){
 		delete cmd;
 		return false;
 	}
+	connect->Close();
 	return true;
 			 
 }

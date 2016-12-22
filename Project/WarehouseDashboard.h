@@ -150,7 +150,8 @@ namespace Project {
 		}  
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 		selected = selectBox->SelectedItem->ToString();
-		if(selected != "")
+		listBox1->Items->Add(selected); 
+		//if(selected != "")
 			backgroundWorker2->RunWorkerAsync();				
 	}
 
@@ -164,18 +165,39 @@ namespace Project {
 			string selectedCompany;
 			long int productID;
 			long int addedAmount;
+			int i,k,itemAmount;
 			MarshalString(selected,selectedCompany);
-			for(int i=0;i<suppliers.size();i++){
+			bool found = false;
+			for(i=0;i<suppliers.size();i++){
 				if(selectedCompany == suppliers[i].getCompanyName()){
-					productID = suppliers[i].getID();
+					productID = suppliers[i].getItemID();
+					itemAmount = suppliers[i].getItemAmount();
+					found = true;
 					break;
 				}
 			}
-			for(int i=0;i<products.size();i++){
-				if(products[i].getID() == productID){
-					
+			if(found){
+				for(i=0;i<products.size();i++){
+					if(products[i].getID() == productID){
+						if(manager.updateProduct(products[i],itemAmount)){
+							k = i;
+							String ^ productName = gcnew String(products[k].getName().c_str());
+							logs = "added "+System::Convert::ToString((int)products[k].getAmount()+itemAmount)+" to product: "+productName +" product id: "+System::Convert::ToString((int)products[k].getID());							
+						}
+						else{
+							logs = "add failed";
+						}
+						break;				
+					}
 				}
 			}
+			else{
+				logs = "failed to find the same object";
+			}
+			
+	}
+	private: System::Void backgroundWorker2_RunWorkerCompleted(System::Object^  sender, System::ComponentModel::RunWorkerCompletedEventArgs^  e) {
+		listBox1->Items->Add(logs);		  
 	}
 };
 }

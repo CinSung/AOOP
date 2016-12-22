@@ -44,9 +44,12 @@ class MYSQL{
       vector <Product> getProduct();
       vector <Staff> getStaff();
       bool insertSQL( Supplier& );
-      bool insertSQL( Package &);
+      bool updatePackage(int PackageID,string collectorName,int oDay,int oMonth,int oYear,bool retrieved= false);
+	  bool insertSQL( Package &);
       bool insertSQL(  Product &);
 	  bool sendCommand(const string );
+	  bool updateProduct(Product& product,int item2Add);
+
   //    bool insertSQL( const Staff &);
   //    bool insertSQL( const Account &);
   //    bool insertSQL( const storeInfo &);

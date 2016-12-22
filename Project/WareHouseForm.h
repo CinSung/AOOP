@@ -96,6 +96,7 @@ namespace Project {
 			this->textBox2->Location = System::Drawing::Point(113, 92);
 			this->textBox2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->textBox2->Name = L"textBox2";
+			this->textBox2->PasswordChar = '*';
 			this->textBox2->Size = System::Drawing::Size(122, 20);
 			this->textBox2->TabIndex = 3;
 			// 

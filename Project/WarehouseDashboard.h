@@ -149,7 +149,7 @@ namespace Project {
 			Marshal::FreeHGlobal(IntPtr((void*)chars));  
 		}  
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		selected = System::Converted(selectBox->SelectedItem;
+		selected = selectBox->SelectedItem->ToString();
 		if(selected != "")
 			backgroundWorker2->RunWorkerAsync();				
 	}

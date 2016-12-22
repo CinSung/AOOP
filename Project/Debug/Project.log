@@ -1,15 +1,19 @@
-﻿Build started 12/22/2016 1:44:02 PM.
+﻿Build started 12/22/2016 2:06:25 PM.
      1>Project "C:\Users\me\Documents\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\Project.unsuccessfulbuild".
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MYSQL.cpp /clr:nostdlib 
          MYSQL.cpp
-     1>MYSQL.cpp(68): warning C4101: 'ex' : unreferenced local variable
-     1>MYSQL.cpp(124): warning C4101: 'e' : unreferenced local variable
+     1>MYSQL.cpp(24): warning C4101: 'e' : unreferenced local variable
+     1>MYSQL.cpp(64): warning C4101: 'e' : unreferenced local variable
+     1>MYSQL.cpp(100): warning C4101: 'e' : unreferenced local variable
+     1>MYSQL.cpp(131): warning C4101: 'e' : unreferenced local variable
+     1>MYSQL.cpp(159): warning C4101: 'e' : unreferenced local variable
+     1>MYSQL.cpp(188): warning C4101: 'e' : unreferenced local variable
          All outputs are up-to-date.
        CoreResGen:
          No resources are out of date with respect to their source files. Skipping resource generation.
@@ -46,4 +50,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.62
+Time Elapsed 00:00:04.99

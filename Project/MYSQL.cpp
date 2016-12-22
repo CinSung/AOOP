@@ -299,7 +299,7 @@ vector <Package> MYSQL::getPackage(){
   return result;
 }
 
-vector <Staff> MYSQL::getStaff(){
+vector <Staffs> MYSQL::getStaff(){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());
   String^ sqlQuery = "select * from staff";
@@ -307,7 +307,7 @@ vector <Staff> MYSQL::getStaff(){
   MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
   MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
   MySqlDataReader^ dataReader;
-  vector <Staff> result;
+  vector <Staffs> result;
   long int salary;
   string name,position;
   try{
@@ -318,7 +318,7 @@ vector <Staff> MYSQL::getStaff(){
           MarshalString(System::Convert::ToString(dataReader->GetString(0)),name);
           MarshalString(System::Convert::ToString(dataReader->GetString(1)),position);
           salary = dataReader->GetInt32(2);
-          result.push_back(Staff(name,position,salary));
+          result.push_back(Staffs(name,position,salary));
       }
     }
   }catch(Exception ^e){

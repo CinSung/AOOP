@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <string>
-#include "Staff.h"
+#include "Staffs.h"
 #include "Supplier.h"
 #include "Product.h"
 #include "Package.h"
@@ -42,7 +42,7 @@ class MYSQL{
       vector <Supplier> getSupplier();
       vector <Package> getPackage();
       vector <Product> getProduct();
-      vector <Staff> getStaff();
+      vector <Staffs> getStaff();
       bool insertSQL( Supplier& );
       bool updatePackage(int PackageID,string collectorName,int oDay,int oMonth,int oYear,bool retrieved= false);
 	  bool insertSQL( Package &);
@@ -50,7 +50,7 @@ class MYSQL{
 	  bool sendCommand(const string );
 	  bool updateProduct(Product& product,int item2Add);
 
-  //    bool insertSQL( const Staff &);
+  //    bool insertSQL( const Staffs &);
   //    bool insertSQL( const Account &);
   //    bool insertSQL( const storeInfo &);
 };

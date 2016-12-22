@@ -1,4 +1,6 @@
 #pragma once
+#include "MYSQL.h"
+#include "Staff.h"
 
 namespace Project {
 
@@ -101,6 +103,7 @@ namespace Project {
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Log In";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Account::button1_Click);
 			// 
 			// Account
 			// 
@@ -122,5 +125,9 @@ namespace Project {
 #pragma endregion
 	private: System::Void Account_Load(System::Object^  sender, System::EventArgs^  e) {
 			 }
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+
+			 
+		 }
 };
 }

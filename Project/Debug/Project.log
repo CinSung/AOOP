@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 ﻿已經開始建置於 2016/12/22 下午 08:43:26。
      1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
      1>InitializeBuildStatus:
          正在變更時間戳記 "Debug\Project.unsuccessfulbuild"。
+=======
+﻿Build started 12/22/2016 6:34:28 PM.
+     1>Project "C:\Users\me\Documents\GitHub\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
+>>>>>>> origin/master
        GenerateTargetFrameworkMonikerAttribute:
        將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
        ClCompile:
+<<<<<<< HEAD
          所有輸出都是最新的。
          d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp Staff1.cpp /clr:nostdlib 
          MainWindow.cpp
@@ -26,6 +34,35 @@
          所有輸出都是最新的。
        CoreResGen:
          相對於資源的來源檔案，並沒有資源過期。將略過產生資源。
+=======
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp WareHouseForm.cpp WarehouseDashboard.cpp /clr:nostdlib 
+         MainWindow.cpp
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+         Project.cpp
+     1>c:\users\me\documents\github\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+         WareHouseForm.cpp
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+         WarehouseDashboard.cpp
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+         Generating Code...
+         All outputs are up-to-date.
+       CoreResGen:
+         No resources are out of date with respect to their source files. Skipping resource generation.
+>>>>>>> origin/master
        ResourceCompile:
          所有輸出都是最新的。
        Link:
@@ -60,4 +97,8 @@
 
 建置成功。
 
+<<<<<<< HEAD
 經過時間 00:00:01.75
+=======
+Time Elapsed 00:00:06.75
+>>>>>>> origin/master

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="DataSources">
+      <UniqueIdentifier>{25ea8758-387c-46c4-91a7-0b1571a8a4f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -68,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="MYSQL.cpp">
       <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="WarehouseChart.cpp">
+      <Filter>標頭檔</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +168,9 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="MYSQL.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="WarehouseChart.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

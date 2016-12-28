@@ -3,7 +3,62 @@
 #include <vector>
 using namespace System::Windows::Forms;
 
+bool MYSQL::addReceipt(int id,double price,string name){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+  MySqlDataReader^ reader;
+  MySqlDataReader^ reader2;
+  MySqlDataReader^ reader3;
+  MySqlCommand^ connCmd;
+  MySqlCommand^ connCmd2;
+  MySqlCommand^ connCmd3;
+  String^ Name = gcnew String(name.c_str());
+  String^ ID = System::Convert::ToString(id);
+  String^ Price = System::Convert::ToString(price);
+  String^ sqlQuery = "insert into receipts(productid,price,name) values (" 
+					  + ID +","+Price+",'"+Name +"');";
+  String ^sqlQuery3 = "select * from products where id = "+ID+" limit 1;";
+  
+  Int32 amount;
+  try			
+  { 
+	conn->Open();
+	connCmd = gcnew MySqlCommand( sqlQuery3 , conn );
+	reader = connCmd->ExecuteReader();
+	if(reader->HasRows){
+      while(reader->Read()){
+        amount = reader->GetInt32(4); //amount
+      }
+    }
+	delete connCmd;
+	conn->Close();
+	conn->Open();
 
+	connCmd2 = gcnew MySqlCommand( sqlQuery , conn );
+	reader2 = connCmd2->ExecuteReader();
+	delete connCmd2;
+	conn->Close();
+	conn->Open();
+
+	sqlQuery = "update products set amount = "+System::Convert::ToString(amount-1)+
+		  " where id = "+System::Convert::ToString(ID)+";";
+	connCmd3 = gcnew MySqlCommand( sqlQuery , conn );
+	reader3 = connCmd3->ExecuteReader();
+  }catch(Exception ^e)
+  { 
+		//System::Windows::Forms::DialogResult result;
+		//result = MessageBox::Show( ex->ToString() );
+	conn->Close();
+	delete connCmd;
+	delete connCmd2;
+	delete connCmd3;
+	return false;
+  }
+  conn->Close();
+   return true;
+}
 bool MYSQL::insertSQL(Supplier &supplier){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());

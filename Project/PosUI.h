@@ -298,7 +298,7 @@ namespace Project {
 		MYSQL manager(username,password);
 		string name;
 		String^ result;
-		 for(int i=0;i<listBox1->Items->Count-1;i++){
+		 for(int i=0;i<listBox2->Items->Count-1;i++){
 			result = listBox3->Items[i]->ToString();
 			MarshalString (result , name );
 			int id = System::Convert::ToInt32(listBox2->Items[i]->ToString());

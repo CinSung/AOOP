@@ -49,6 +49,7 @@ class MYSQL{
       bool insertSQL(  Product &);
 	  bool sendCommand(const string );
 	  bool updateProduct(Product& product,int item2Add);
+	  bool addReceipt(int id,double price,string name);
 
   //    bool insertSQL( const Staffs &);
   //    bool insertSQL( const Account &);

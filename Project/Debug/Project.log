@@ -1,77 +1,42 @@
-<<<<<<< HEAD
-﻿已經開始建置於 2016/12/22 下午 08:43:26。
-     1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
-     1>InitializeBuildStatus:
-         正在變更時間戳記 "Debug\Project.unsuccessfulbuild"。
-=======
-﻿Build started 12/22/2016 6:34:28 PM.
-     1>Project "C:\Users\me\Documents\GitHub\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
+﻿Build started 12/29/2016 12:10:20 AM.
+     1>Project "C:\Users\me\Desktop\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
->>>>>>> origin/master
        GenerateTargetFrameworkMonikerAttribute:
-       將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
-<<<<<<< HEAD
-         所有輸出都是最新的。
-         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp Staff1.cpp /clr:nostdlib 
-         MainWindow.cpp
-     1>d:\desktop\project\new\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(217): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(226): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(213): warning C4101: 'addedAmount' : 未參考的區域變數
-         Project.cpp
-     1>d:\desktop\project\new\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(217): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(226): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(213): warning C4101: 'addedAmount' : 未參考的區域變數
-         Staff1.cpp
-     1>d:\desktop\project\new\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned 不相符
-         正在產生程式碼...
-         所有輸出都是最新的。
-       CoreResGen:
-         相對於資源的來源檔案，並沒有資源過期。將略過產生資源。
-=======
          All outputs are up-to-date.
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp WareHouseForm.cpp WarehouseDashboard.cpp /clr:nostdlib 
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp /clr:nostdlib 
          MainWindow.cpp
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+     1>c:\users\me\desktop\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+     1>c:\users\me\desktop\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned mismatch
          Project.cpp
-     1>c:\users\me\documents\github\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
-         WareHouseForm.cpp
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
-         WarehouseDashboard.cpp
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\documents\github\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+     1>c:\users\me\desktop\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+     1>c:\users\me\desktop\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned mismatch
          Generating Code...
          All outputs are up-to-date.
        CoreResGen:
-         No resources are out of date with respect to their source files. Skipping resource generation.
->>>>>>> origin/master
+         "C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile MainWindow.resx,Debug\Project.MainWindow.resources
+         Processing resource file "MainWindow.resx" into "Debug\Project.MainWindow.resources".
        ResourceCompile:
-         所有輸出都是最新的。
+         All outputs are up-to-date.
        Link:
-         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\New\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Account1.resources /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.MainWindow.resources /ASSEMBLYRESOURCE:Debug\Project.SaleSystemForm.resources /ASSEMBLYRESOURCE:Debug\Project.Staff1.resources /ASSEMBLYRESOURCE:Debug\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseChart.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseDashboard.resources /ASSEMBLYRESOURCE:Debug\Project.WareHouseForm.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\New\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\me\Desktop\AOOP\Debug\Project.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\Project.Account1.resources /ASSEMBLYRESOURCE:Debug\Project.Form1.resources /ASSEMBLYRESOURCE:Debug\Project.MainWindow.resources /ASSEMBLYRESOURCE:Debug\Project.PosUI.resources /ASSEMBLYRESOURCE:Debug\Project.SaleSystemForm.resources /ASSEMBLYRESOURCE:Debug\Project.Staff1.resources /ASSEMBLYRESOURCE:Debug\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseChart.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseDashboard.resources /ASSEMBLYRESOURCE:Debug\Project.WareHouseForm.resources /ASSEMBLYRESOURCE:Debug\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Debug\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\me\Desktop\AOOP\Debug\Project.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
          Debug\Account1.obj
          Debug\AssemblyInfo.obj
          Debug\MainWindow.obj
          Debug\MYSQL.obj
          Debug\Package.obj
+         Debug\PosUI.obj
          Debug\Product.obj
          Debug\Project.obj
          Debug\PurchaseManage.obj
@@ -87,18 +52,14 @@
          Debug\WarehouseManage.obj
          Debug\WarehouseManageUI.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-         Project.vcxproj -> D:\Desktop\Project\New\AOOP\Debug\Project.exe
+         Project.vcxproj -> C:\Users\me\Desktop\AOOP\Debug\Project.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Desktop\Project\New\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\me\Desktop\AOOP\Debug\Project.exe;#1" /manifest Debug\Project.exe.intermediate.manifest
        FinalizeBuildStatus:
-         正在刪除檔案 "Debug\Project.unsuccessfulbuild"。
-         正在變更時間戳記 "Debug\Project.lastbuildstate"。
-     1>專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj" (build 目標) 建置完成。
+         Deleting file "Debug\Project.unsuccessfulbuild".
+         Touching "Debug\Project.lastbuildstate".
+     1>Done Building Project "C:\Users\me\Desktop\AOOP\Project\Project.vcxproj" (build target(s)).
 
-建置成功。
+Build succeeded.
 
-<<<<<<< HEAD
-經過時間 00:00:01.75
-=======
-Time Elapsed 00:00:06.75
->>>>>>> origin/master
+Time Elapsed 00:00:07.36

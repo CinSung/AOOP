@@ -93,6 +93,7 @@
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="MYSQL.cpp" />
     <ClCompile Include="Package.cpp" />
+    <ClCompile Include="PosUI.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Project.cpp" />
     <ClCompile Include="PurchaseManage.cpp" />
@@ -133,6 +134,9 @@
     <ClInclude Include="MYSQL.h" />
     <ClInclude Include="Package.h" />
     <ClInclude Include="Payment.h" />
+    <ClInclude Include="PosUI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Product.h" />
     <ClInclude Include="PurchaseManage.h" />
     <ClInclude Include="resource.h" />
@@ -181,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PosUI.resx">
+      <DependentUpon>PosUI.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SaleSystemForm.resx">
       <DependentUpon>SaleSystemForm.h</DependentUpon>

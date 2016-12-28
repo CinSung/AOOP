@@ -81,6 +81,9 @@
     <ClCompile Include="Staffs.cpp">
       <Filter>原始程式檔</Filter>
     </ClCompile>
+    <ClCompile Include="PosUI.cpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -186,6 +189,9 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="Staffs.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="PosUI.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

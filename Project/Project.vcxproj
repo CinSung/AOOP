@@ -98,6 +98,7 @@
     <ClCompile Include="PurchaseManage.cpp" />
     <ClCompile Include="SaleSystemForm.cpp" />
     <ClCompile Include="Staff1.cpp" />
+    <ClCompile Include="Staffs.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -115,6 +116,7 @@
     <ClInclude Include="Account1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="BasicFunction.h" />
     <ClInclude Include="Cash.h" />
     <ClInclude Include="CreditCard.h" />
     <ClInclude Include="Detail.h" />
@@ -144,6 +146,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="StaffManage.h" />
+    <ClInclude Include="Staffs.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StoreData.h" />
     <ClInclude Include="StoreInfo.h">

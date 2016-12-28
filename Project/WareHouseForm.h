@@ -132,7 +132,7 @@ namespace Project {
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 				WarehouseDashboard^ warehouseDashboard = gcnew WarehouseDashboard;
 				warehouseDashboard->username = textBox1->Text;
-				warehouseDashboard->username = textBox2->Text;
+				warehouseDashboard->password = textBox2->Text;
 				 warehouseDashboard->Show();
 	}
 };

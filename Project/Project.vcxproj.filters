@@ -78,6 +78,9 @@
     <ClCompile Include="WarehouseDashboard.cpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+    <ClCompile Include="Staffs.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -93,9 +96,6 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="StaffManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Staff.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="Log.h">
@@ -179,6 +179,15 @@
     <ClInclude Include="WarehouseDashboard.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="BasicFunction.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Staff.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Staffs.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -211,6 +220,9 @@
       <Filter>資源檔</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="WarehouseChart.resx">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseDashboard.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
   </ItemGroup>

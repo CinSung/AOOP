@@ -197,7 +197,11 @@ namespace Project {
 	}
 
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-				
+		selected = selectBox->SelectedItem->ToString();
+		backgroundWorker1->RunWorkerAsync();
+	}
+	private: System::Void backgroundWorker1_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
+		
 	}
 	private: System::Void backgroundWorker2_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
 			string password;

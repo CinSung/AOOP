@@ -1,6 +1,7 @@
 #pragma once
 #include "MYSQL.h"
 #include "Supplier.h"
+#include "WarehouseChart.h"
 using namespace std;
 
 
@@ -190,15 +191,21 @@ namespace Project {
 			Marshal::FreeHGlobal(IntPtr((void*)chars));  
 		}  
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		selected = selectBox->SelectedItem->ToString();
-		listBox1->Items->Add(selected); 
-		//if(selected != "")
-			backgroundWorker2->RunWorkerAsync();				
+		if(selectBox->SelectedIndex != -1){
+			selected = selectBox->SelectedItem->ToString();
+			listBox1->Items->Add(selected); 
+			backgroundWorker2->RunWorkerAsync();
+		}
 	}
 
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-		selected = selectBox->SelectedItem->ToString();
-		backgroundWorker1->RunWorkerAsync();
+//		selected = selectBox->SelectedItem->ToString();
+//		backgroundWorker1->RunWorkerAsync();
+		if(selectBox->SelectedIndex != -1){
+			Form^ chart= gcnew WarehouseChart;
+			chart->Show();
+		}
+
 	}
 	private: System::Void backgroundWorker1_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
 		

@@ -1,4 +1,4 @@
-﻿Build started 12/30/2016 4:32:33 PM.
+﻿Build started 1/2/2017 10:40:15 AM.
      1>Project "C:\Users\me\Desktop\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -6,24 +6,32 @@
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp PosUI.cpp Project.cpp /clr:nostdlib 
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Project.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp WareHouseForm.cpp WarehouseDashboard.cpp /clr:nostdlib 
          MainWindow.cpp
      1>c:\users\me\desktop\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
-     1>c:\users\me\desktop\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned mismatch
-         PosUI.cpp
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(225): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(234): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4101: 'addedAmount' : unreferenced local variable
      1>c:\users\me\desktop\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned mismatch
          Project.cpp
      1>c:\users\me\desktop\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\Staff1.h(174): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : unreferenced local variable
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(225): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(234): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4101: 'addedAmount' : unreferenced local variable
      1>c:\users\me\desktop\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned mismatch
+         WareHouseForm.cpp
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(225): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(234): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4101: 'addedAmount' : unreferenced local variable
+         WarehouseDashboard.cpp
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(225): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(234): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(221): warning C4101: 'addedAmount' : unreferenced local variable
          Generating Code...
          All outputs are up-to-date.
        CoreResGen:
@@ -63,4 +71,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:06.94
+Time Elapsed 00:00:08.49

@@ -17,8 +17,8 @@ bool MYSQL::addReceipt(int id,double price,string name){
   String^ Name = gcnew String(name.c_str());
   String^ ID = System::Convert::ToString(id);
   String^ Price = System::Convert::ToString(price);
-  String^ sqlQuery = "insert into receipts(productid,price,name) values (" 
-					  + ID +","+Price+",'"+Name +"');";
+  String^ sqlQuery = "insert into receipts(productid,price,name,date_created) values (" 
+					  + ID +","+Price+",'"+Name +"',now());";
   String ^sqlQuery3 = "select * from products where id = "+ID+" limit 1;";
   
   Int32 amount;

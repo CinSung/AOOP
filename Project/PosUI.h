@@ -289,24 +289,31 @@ namespace Project {
 				}
 			}
 			label1->Text = System::Convert::ToString(sum);
+
+
 	}
 		
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-        string username,password;
-		MarshalString (Username , username );
-		MarshalString (Password, password );
-		MYSQL manager(username,password);
-		string name;
-		String^ result;
-		 for(int i=0;i<listBox2->Items->Count-1;i++){
-			result = listBox3->Items[i]->ToString();
-			MarshalString (result , name );
-			int id = System::Convert::ToInt32(listBox2->Items[i]->ToString());
-			double price = System::Convert::ToDouble(listBox4->Items[i]->ToString());
-			 //manager.addReceipt()
-			manager.addReceipt(id,price,name);		 
-		 }
-
+		if(listBox2->Items->Count > 0){
+			string username,password;
+			MarshalString (Username , username );
+			MarshalString (Password, password );
+			MYSQL manager(username,password);
+			string name;
+			String^ result;
+			 for(int i=0;i<listBox2->Items->Count-1;i++){
+				result = listBox3->Items[i]->ToString();
+				MarshalString (result , name );
+				int id = System::Convert::ToInt32(listBox2->Items[i]->ToString());
+				double price = System::Convert::ToDouble(listBox4->Items[i]->ToString());
+				 //manager.addReceipt()
+				manager.addReceipt(id,price,name);		 
+			 }
+			listBox2->Items->Clear();
+			listBox3->Items->Clear();
+			listBox4->Items->Clear();
+			label1->Text = "0.00";
+		}
 	}
 private: System::Void Login_Click(System::Object^  sender, System::EventArgs^  e) {
 			Password = password->Text;

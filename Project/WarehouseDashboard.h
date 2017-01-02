@@ -202,7 +202,10 @@ namespace Project {
 //		selected = selectBox->SelectedItem->ToString();
 //		backgroundWorker1->RunWorkerAsync();
 		if(selectBox->SelectedIndex != -1){
-			Form^ chart= gcnew WarehouseChart;
+			WarehouseChart^ chart= gcnew WarehouseChart;
+			chart->companyName = selectBox->SelectedItem->ToString();
+			chart->username = textBox1->Text;
+			chart->password = textBox2->Text;
 			chart->Show();
 		}
 

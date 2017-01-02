@@ -382,3 +382,41 @@ vector <Staffs> MYSQL::getStaff(){
   }
   return result;
 }
+vector <Receipt> MYSQL::getReceipt(int month){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ sqlQuery;
+
+  if( month >= 1 && month <= 9){
+	sqlQuery = "select productid,price,name,idx,date_format(date_created,'%d-%m-%y') from receipts where date_created like '%-0"+System::Convert::ToString(month)+"-%';";
+  }
+  else if( month >= 10 && month <= 12){
+	sqlQuery = "select productid,price,name,idx,date_format(date_created,'%d-%m-%y') from receipts where date_created like '%-"+System::Convert::ToString(month)+"-%';";
+  }
+  else{
+	sqlQuery = "select productid,price,name,idx,date_format(date_created,'%d-%m-%y')  from receipts;";
+  }
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+  MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+  MySqlDataReader^ dataReader;
+  vector <Receipt> result;
+  long int price;
+  string name,date;
+  try{
+    conn->Open();
+    dataReader = connCmd->ExecuteReader();
+    if(dataReader->HasRows){
+      while(dataReader->Read()){
+          MarshalString(System::Convert::ToString(dataReader->GetString(2)),name);
+          MarshalString(System::Convert::ToString(dataReader->GetString(4)),date);
+          price = dataReader->GetInt32(1);
+          result.push_back(Receipt(name,date,price,dataReader->GetInt32(0)));
+      }
+    }
+  }catch(Exception ^e){
+//    return false;
+    MessageBox::Show(e->Message);
+  }
+  return result;
+}

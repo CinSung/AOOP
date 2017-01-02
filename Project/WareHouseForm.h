@@ -90,6 +90,7 @@ namespace Project {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(122, 20);
 			this->textBox1->TabIndex = 2;
+			this->textBox1->Text = L"root";
 			// 
 			// textBox2
 			// 
@@ -99,6 +100,7 @@ namespace Project {
 			this->textBox2->PasswordChar = '*';
 			this->textBox2->Size = System::Drawing::Size(122, 20);
 			this->textBox2->TabIndex = 3;
+			this->textBox2->Text = L"aoop2016";
 			// 
 			// button1
 			// 
@@ -133,7 +135,7 @@ namespace Project {
 				WarehouseDashboard^ warehouseDashboard = gcnew WarehouseDashboard;
 				warehouseDashboard->username = textBox1->Text;
 				warehouseDashboard->password = textBox2->Text;
-				 warehouseDashboard->Show();
+				warehouseDashboard->Show();
 	}
 };
 }

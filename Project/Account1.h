@@ -92,8 +92,11 @@ namespace Project {
 			// 
 			this->textBox2->Location = System::Drawing::Point(157, 150);
 			this->textBox2->Name = L"textBox2";
+			this->textBox2->PasswordChar = '*';
 			this->textBox2->Size = System::Drawing::Size(162, 25);
 			this->textBox2->TabIndex = 3;
+			this->textBox2->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Account::textBox2_KeyDown);
+			this->textBox2->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &Account::textBox2_KeyPress);
 			// 
 			// button1
 			// 
@@ -122,12 +125,48 @@ namespace Project {
 			this->PerformLayout();
 
 		}
+
+		void hide_login_and_showinfo()
+		{
+			textBox1->Visible=false;
+			textBox2->Visible=false;
+			label1->Visible=false;
+			label2->Visible=false;
+			button1->Visible=false;
+		}
+
 #pragma endregion
+
+		void MarshalString ( String ^ s, string& os ) {  
+			using namespace Runtime::InteropServices;  
+			const char* chars =   
+				(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();  
+			os = chars;  
+			Marshal::FreeHGlobal(IntPtr((void*)chars));  
+		}  
+
 	private: System::Void Account_Load(System::Object^  sender, System::EventArgs^  e) {
 			 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 
+			 bool success=1;
+
+			 string usr,pwd;
+			 MarshalString(textBox1->Text,usr);
+			 MarshalString(textBox2->Text,pwd);
+			 MYSQL accountdata(usr,pwd);
+
 			 
+
+			 hide_login_and_showinfo();
+		 }
+private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
+		 }
+private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
+			 if (e->KeyCode==Keys::Enter)
+			 {
+				 button1_Click(sender,e);
+			 }
 		 }
 };
 }

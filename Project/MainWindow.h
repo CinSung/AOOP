@@ -136,7 +136,7 @@ namespace Project {
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(500, 75);
 			this->button6->TabIndex = 5;
-			this->button6->Text = L"­ÜÀxºÞ²z";
+			this->button6->Text = L"PosUI";
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Click += gcnew System::EventHandler(this, &MainWindow::button6_Click);
 			// 
@@ -216,6 +216,7 @@ private: System::Void backgroundWorker1_DoWork(System::Object^  sender, System::
 		 }
 private: System::Void backgroundWorker1_RunWorkerCompleted(System::Object^  sender, System::ComponentModel::RunWorkerCompletedEventArgs^  e) {
 			 this->Enabled=true;
+			 this->Activate();
 		 }
 };
 }

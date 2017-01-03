@@ -101,6 +101,7 @@ namespace Project {
 			this->textBox2->PasswordChar = '*';
 			this->textBox2->Size = System::Drawing::Size(161, 25);
 			this->textBox2->TabIndex = 3;
+			this->textBox2->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Staff::textBox2_KeyDown);
 			// 
 			// button1
 			// 
@@ -194,6 +195,15 @@ namespace Project {
 			 }
 private: System::Void Staff_FormClosed(System::Object^  sender, System::Windows::Forms::FormClosedEventArgs^  e) {
 			 
+		 }
+private: System::Void textBox2_Enter(System::Object^  sender, System::EventArgs^  e) {
+			 //button1_Click(sender,e);
+		 }
+private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
+			 if (e->KeyCode==Keys::Enter)
+			 {
+				 button1_Click(sender,e);
+			 }
 		 }
 };
 }

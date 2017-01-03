@@ -5,6 +5,8 @@
 #include "SaleSystemForm.h"
 #include "WareHouseForm.h"
 #include "PosUI.h"
+
+
 namespace Project {
 
 	using namespace System;
@@ -25,6 +27,7 @@ namespace Project {
 			InitializeComponent();
 			//
 			//TODO: 在此加入建構函式程式碼
+			
 			//
 		}
 
@@ -46,10 +49,18 @@ namespace Project {
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Button^  button5;
 	private: System::Windows::Forms::Button^  button6;
+	private: System::ComponentModel::BackgroundWorker^  backgroundWorker1;
 
 	private:
 		/// <summary>
 		/// 設計工具所需的變數。
+		//Form^ StaffForm;
+		//Form^ StoreInfoForm;
+		//Form^ AccountForm;
+		//Form^ SaleForm ;
+		//Form^ WarehouseForm;
+		//Form^ posui
+		Form^ NewForm;
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
@@ -66,14 +77,14 @@ namespace Project {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->backgroundWorker1 = (gcnew System::ComponentModel::BackgroundWorker());
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(112, 17);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->button1->Location = System::Drawing::Point(149, 20);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(375, 65);
+			this->button1->Size = System::Drawing::Size(500, 75);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"員工管理";
 			this->button1->UseVisualStyleBackColor = true;
@@ -81,10 +92,9 @@ namespace Project {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(112, 88);
-			this->button2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->button2->Location = System::Drawing::Point(149, 102);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(375, 65);
+			this->button2->Size = System::Drawing::Size(500, 75);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"超商資料";
 			this->button2->UseVisualStyleBackColor = true;
@@ -92,10 +102,9 @@ namespace Project {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(112, 158);
-			this->button3->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->button3->Location = System::Drawing::Point(149, 182);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(375, 65);
+			this->button3->Size = System::Drawing::Size(500, 75);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"帳目";
 			this->button3->UseVisualStyleBackColor = true;
@@ -103,10 +112,9 @@ namespace Project {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(112, 228);
-			this->button4->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->button4->Location = System::Drawing::Point(149, 263);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(375, 65);
+			this->button4->Size = System::Drawing::Size(500, 75);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"銷售服務";
 			this->button4->UseVisualStyleBackColor = true;
@@ -114,10 +122,9 @@ namespace Project {
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(112, 298);
-			this->button5->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->button5->Location = System::Drawing::Point(149, 344);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(375, 65);
+			this->button5->Size = System::Drawing::Size(500, 75);
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"倉儲管理";
 			this->button5->UseVisualStyleBackColor = true;
@@ -125,57 +132,90 @@ namespace Project {
 			// 
 			// button6
 			// 
-			this->button6->Location = System::Drawing::Point(112, 369);
-			this->button6->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
+			this->button6->Location = System::Drawing::Point(149, 426);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(375, 65);
+			this->button6->Size = System::Drawing::Size(500, 75);
 			this->button6->TabIndex = 5;
 			this->button6->Text = L"倉儲管理";
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Click += gcnew System::EventHandler(this, &MainWindow::button6_Click);
 			// 
+			// backgroundWorker1
+			// 
+			this->backgroundWorker1->DoWork += gcnew System::ComponentModel::DoWorkEventHandler(this, &MainWindow::backgroundWorker1_DoWork);
+			this->backgroundWorker1->RunWorkerCompleted += gcnew System::ComponentModel::RunWorkerCompletedEventHandler(this, &MainWindow::backgroundWorker1_RunWorkerCompleted);
+			// 
 			// MainWindow
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(586, 481);
+			this->ClientSize = System::Drawing::Size(781, 555);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->Name = L"MainWindow";
 			this->Text = L"MainWindow";
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+	
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 Form^ StaffForm = gcnew Staff;
-				 StaffForm->Show();
+				 NewForm = gcnew Staff;
+				 NewForm->Show();
 
+				 this->Enabled=false;
+				 backgroundWorker1->RunWorkerAsync();
+				 
 			 }
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-				Form^ StoreInfoForm = gcnew StoreInfo;
-				StoreInfoForm->Show();
+				NewForm = gcnew StoreInfo;
+				NewForm->Show();
+
+				this->Enabled=false;
+				backgroundWorker1->RunWorkerAsync();
+
 		 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
-				Form^ AccountForm = gcnew Account;
-				AccountForm->Show();
+				NewForm = gcnew Account;
+				NewForm->Show();
+
+				this->Enabled=false;
+				backgroundWorker1->RunWorkerAsync();
+
 		 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
-				Form^ SaleForm = gcnew SaleSystemForm;
-				SaleForm->Show();
+				NewForm = gcnew SaleSystemForm;
+				NewForm->Show();
+
+				this->Enabled=false;
+				backgroundWorker1->RunWorkerAsync();
+
 		 }
 private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
-				Form^ WarehouseForm = gcnew WareHouseForm;
-				WarehouseForm->Show();
+				NewForm = gcnew WareHouseForm;
+				NewForm->Show();
+
+				this->Enabled=false;
+				backgroundWorker1->RunWorkerAsync();
+
 		 }
 private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
-			 Form^ posui = gcnew PosUI;
-			 posui->Show();
+				NewForm = gcnew PosUI;
+				NewForm->Show();
+
+				this->Enabled=false;
+				backgroundWorker1->RunWorkerAsync();
+
+		 }
+private: System::Void backgroundWorker1_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
+			 while (NewForm->Created){}
+		 }
+private: System::Void backgroundWorker1_RunWorkerCompleted(System::Object^  sender, System::ComponentModel::RunWorkerCompletedEventArgs^  e) {
+			 this->Enabled=true;
 		 }
 };
 }

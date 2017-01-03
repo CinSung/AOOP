@@ -1,6 +1,7 @@
   Project.Account1.resources - Embedded, ContainedInManifestFile, 
   Project.Form1.resources - Embedded, ContainedInManifestFile, 
   Project.MainWindow.resources - Embedded, ContainedInManifestFile, 
+  Project.PosUI.resources - Embedded, ContainedInManifestFile, 
   Project.SaleSystemForm.resources - Embedded, ContainedInManifestFile, 
   Project.Staff1.resources - Embedded, ContainedInManifestFile, 
   Project.StoreInfo.resources - Embedded, ContainedInManifestFile, 
@@ -62,6 +63,9 @@ Class Project.WareHouseForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldIn
   Fields:
     System.Windows.Forms.TextBox textBox2 : Public
     System.Windows.Forms.TextBox textBox1 : Public
+Class Project.PosUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -133,6 +133,7 @@ namespace Project {
 			this->Controls->Add(this->label1);
 			this->Name = L"Staff";
 			this->Text = L"Staff";
+			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &Staff::Staff_FormClosed);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -191,5 +192,8 @@ namespace Project {
 				 if (!success)	return;
 				 hide_login_and_showinfo();
 			 }
+private: System::Void Staff_FormClosed(System::Object^  sender, System::Windows::Forms::FormClosedEventArgs^  e) {
+			 
+		 }
 };
 }

@@ -1,351 +1,85 @@
-﻿已經開始建置於 2016/12/22 下午 07:56:52。
-     1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj"。
+﻿已經開始建置於 2017/1/3 下午 05:49:51。
+     1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\AOOP\Project\Project.vcxproj"。
      1>InitializeBuildStatus:
          由於指定了 "AlwaysCreate"，因此正在建立 "Release\Project.unsuccessfulbuild"。
        GenerateTargetFrameworkMonikerAttribute:
        將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(91,5): warning : 遺漏必要的檔案 "C:\PROGRAM FILES\MYSQL\CONNECTOR.NET 6.9\ASSEMBLIES\V4.0\MYSQL.DATA.DLL"。
+         先前的錯誤已轉換成警告，因為工作是以 ContinueOnError=true 呼叫。
        ClCompile:
-         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt stdafx.cpp /clr:nostdlib 
-         stdafx.cpp
-         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Account1.cpp AssemblyInfo.cpp MainWindow.cpp MYSQL.cpp Package.cpp Product.cpp Project.cpp PurchaseManage.cpp SaleSystemForm.cpp Staff1.cpp StoreInfo.cpp Supplier.cpp WarehouseChart.cpp WarehouseDashboard.cpp WareHouseForm.cpp WarehouseManage.cpp WarehouseManageUI.cpp /clr:nostdlib 
-         Account1.cpp
-         AssemblyInfo.cpp
+         所有輸出都是最新的。
+         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp /clr:nostdlib 
          MainWindow.cpp
-     1>d:\Software\VisualStudio\VC\include\xmemory(137): error C3699: '*' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-                 d:\Software\VisualStudio\VC\include\vector(421) : 請參閱所要編譯的類別 樣板 具現化 'std::allocator<_Ty>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(481) : 請參閱所要編譯的類別 樣板 具現化 'std::_Vector_val<_Ty,_Alloc>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 d:\desktop\project\new\aoop\project\Staff1.h(164) : 請參閱所要編譯的類別 樣板 具現化 'std::vector<_Ty>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-     1>d:\Software\VisualStudio\VC\include\xmemory(138): error C3699: '&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(139): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(140): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(195): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(200): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(470): error C3265: 不能將 Managed '_Myfirst' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(471): error C3265: 不能將 Managed '_Mylast' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(472): error C3265: 不能將 Managed '_Myend' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(521): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(527): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(580): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(630): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(655): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(975): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1045): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1050): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1057): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1242): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1284): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1329): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1419): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\desktop\project\new\aoop\project\Staff1.h(165): error C2679: 二元運算子 '=' : 找不到使用右方運算元型別 'std::vector<_Ty>' 的運算子 (或是沒有可接受的轉換)
-                 with
-                 [
-                     _Ty=Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(599): 可能是 'std::vector<_Ty> &std::vector<_Ty>::operator =(std::vector<_Ty> &&)'
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(708): 或       'std::vector<_Ty> &std::vector<_Ty>::operator =(const std::vector<_Ty> &)'
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 當嘗試符合引數清單 '(std::vector<_Ty>, std::vector<_Ty>)' 時
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 and
-                 [
-                     _Ty=Staff
-                 ]
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(217): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(226): warning C4018: '<' : signed/unsigned 不相符
-         MYSQL.cpp
-     1>MYSQL.cpp(24): warning C4101: 'e' : 未參考的區域變數
-     1>MYSQL.cpp(64): warning C4101: 'e' : 未參考的區域變數
-     1>MYSQL.cpp(100): warning C4101: 'e' : 未參考的區域變數
-     1>MYSQL.cpp(131): warning C4101: 'e' : 未參考的區域變數
-     1>MYSQL.cpp(159): warning C4101: 'e' : 未參考的區域變數
-     1>MYSQL.cpp(188): warning C4101: 'e' : 未參考的區域變數
-         Package.cpp
-         Product.cpp
+     1>d:\desktop\project\aoop\project\Staff1.h(175): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : 未參考的區域變數
+     1>d:\desktop\project\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned 不相符
          Project.cpp
-     1>d:\desktop\project\new\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\Software\VisualStudio\VC\include\xmemory(137): error C3699: '*' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-                 d:\Software\VisualStudio\VC\include\vector(421) : 請參閱所要編譯的類別 樣板 具現化 'std::allocator<_Ty>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(481) : 請參閱所要編譯的類別 樣板 具現化 'std::_Vector_val<_Ty,_Alloc>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 d:\desktop\project\new\aoop\project\Staff1.h(164) : 請參閱所要編譯的類別 樣板 具現化 'std::vector<_Ty>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-     1>d:\Software\VisualStudio\VC\include\xmemory(138): error C3699: '&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(139): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(140): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(195): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(200): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(470): error C3265: 不能將 Managed '_Myfirst' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(471): error C3265: 不能將 Managed '_Mylast' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(472): error C3265: 不能將 Managed '_Myend' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(521): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(527): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(580): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(630): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(655): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(975): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1045): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1050): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1057): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1242): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1284): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1329): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1419): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\desktop\project\new\aoop\project\Staff1.h(165): error C2679: 二元運算子 '=' : 找不到使用右方運算元型別 'std::vector<_Ty>' 的運算子 (或是沒有可接受的轉換)
-                 with
-                 [
-                     _Ty=Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(599): 可能是 'std::vector<_Ty> &std::vector<_Ty>::operator =(std::vector<_Ty> &&)'
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(708): 或       'std::vector<_Ty> &std::vector<_Ty>::operator =(const std::vector<_Ty> &)'
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 當嘗試符合引數清單 '(std::vector<_Ty>, std::vector<_Ty>)' 時
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 and
-                 [
-                     _Ty=Staff
-                 ]
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(217): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(226): warning C4018: '<' : signed/unsigned 不相符
-         PurchaseManage.cpp
-         SaleSystemForm.cpp
-         Staff1.cpp
-     1>d:\Software\VisualStudio\VC\include\xmemory(137): error C3699: '*' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-                 d:\Software\VisualStudio\VC\include\vector(421) : 請參閱所要編譯的類別 樣板 具現化 'std::allocator<_Ty>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(481) : 請參閱所要編譯的類別 樣板 具現化 'std::_Vector_val<_Ty,_Alloc>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 d:\desktop\project\new\aoop\project\Staff1.h(164) : 請參閱所要編譯的類別 樣板 具現化 'std::vector<_Ty>' 的參考
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-     1>d:\Software\VisualStudio\VC\include\xmemory(138): error C3699: '&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(139): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(140): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(195): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\xmemory(200): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(470): error C3265: 不能將 Managed '_Myfirst' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(471): error C3265: 不能將 Managed '_Mylast' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(472): error C3265: 不能將 Managed '_Myend' 宣告於 Unmanaged 'std::_Vector_val<_Ty,_Alloc>' 中
-                 with
-                 [
-                     _Ty=Project::Staff,
-                     _Alloc=std::allocator<Project::Staff>
-                 ]
-                 不可宣告全域或靜態變數，或參考 gc 堆積中其他物件的原生型別的成員
-     1>d:\Software\VisualStudio\VC\include\vector(521): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(527): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(580): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(630): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(655): error C3699: '&&' : 不能在型別 'Project::Staff' 上使用這個間接取值
-                 編譯器將 '&&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(975): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1045): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1050): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1057): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1242): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1284): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1329): error C3699: '&' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '&' 取代為 '^' 繼續進行剖析
-     1>d:\Software\VisualStudio\VC\include\vector(1419): error C3699: '*' : 不能在型別 'const Project::Staff' 上使用這個間接取值
-                 編譯器將 '*' 取代為 '^' 繼續進行剖析
-     1>d:\desktop\project\new\aoop\project\Staff1.h(165): error C2679: 二元運算子 '=' : 找不到使用右方運算元型別 'std::vector<_Ty>' 的運算子 (或是沒有可接受的轉換)
-                 with
-                 [
-                     _Ty=Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(599): 可能是 'std::vector<_Ty> &std::vector<_Ty>::operator =(std::vector<_Ty> &&)'
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 d:\Software\VisualStudio\VC\include\vector(708): 或       'std::vector<_Ty> &std::vector<_Ty>::operator =(const std::vector<_Ty> &)'
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 當嘗試符合引數清單 '(std::vector<_Ty>, std::vector<_Ty>)' 時
-                 with
-                 [
-                     _Ty=Project::Staff
-                 ]
-                 and
-                 [
-                     _Ty=Staff
-                 ]
-         StoreInfo.cpp
-         Supplier.cpp
-         WarehouseChart.cpp
-         WarehouseDashboard.cpp
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(217): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(226): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(213): warning C4101: 'addedAmount' : 未參考的區域變數
-         WareHouseForm.cpp
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(217): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(226): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\new\aoop\project\WarehouseDashboard.h(213): warning C4101: 'addedAmount' : 未參考的區域變數
-         WarehouseManage.cpp
-         WarehouseManageUI.cpp
+     1>d:\desktop\project\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\Staff1.h(175): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned 不相符
+     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : 未參考的區域變數
+     1>d:\desktop\project\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned 不相符
          正在產生程式碼...
-     1>專案 "D:\Desktop\Project\New\AOOP\Project\Project.vcxproj" (build 目標) 建置完成 -- 失敗。
+         所有輸出都是最新的。
+       ManagedIncrementalBuildPostProcessDependencyGraph:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 10.0\VC\BIN\1033\CLUI.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MSCORLIB.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.CORE.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DATA.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DRAWING.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.WINDOWS.FORMS.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.XML.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MICROSOFT.VISUALC.DLL' or one of its dependencies. 系統找不到指定的檔案。
+       CoreResGen:
+         相對於資源的來源檔案，並沒有資源過期。將略過產生資源。
+       ResourceCompile:
+         所有輸出都是最新的。
+       Link:
+         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\AOOP\Release\Project.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\Project.Account1.resources /ASSEMBLYRESOURCE:Release\Project.Form1.resources /ASSEMBLYRESOURCE:Release\Project.MainWindow.resources /ASSEMBLYRESOURCE:Release\Project.PosUI.resources /ASSEMBLYRESOURCE:Release\Project.SaleSystemForm.resources /ASSEMBLYRESOURCE:Release\Project.Staff1.resources /ASSEMBLYRESOURCE:Release\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseChart.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseDashboard.resources /ASSEMBLYRESOURCE:Release\Project.WareHouseForm.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Release\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\AOOP\Release\Project.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\Account1.obj
+         Release\AssemblyInfo.obj
+         Release\MainWindow.obj
+         Release\MYSQL.obj
+         Release\Package.obj
+         Release\PosUI.obj
+         Release\Product.obj
+         Release\Project.obj
+         Release\PurchaseManage.obj
+         Release\SaleSystemForm.obj
+         Release\Staff1.obj
+         Release\Staffs.obj
+         Release\stdafx.obj
+         Release\StoreInfo.obj
+         Release\Supplier.obj
+         Release\WarehouseChart.obj
+         Release\WarehouseDashboard.obj
+         Release\WareHouseForm.obj
+         Release\WarehouseManage.obj
+         Release\WarehouseManageUI.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Project.vcxproj -> D:\Desktop\Project\AOOP\Release\Project.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Desktop\Project\AOOP\Release\Project.exe;#1" /manifest Release\Project.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在刪除檔案 "Release\Project.unsuccessfulbuild"。
+         正在變更時間戳記 "Release\Project.lastbuildstate"。
+     1>專案 "D:\Desktop\Project\AOOP\Project\Project.vcxproj" (build 目標) 建置完成。
 
-建置失敗。
+建置成功。
 
-經過時間 00:00:02.87
+經過時間 00:00:01.74

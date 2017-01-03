@@ -24,6 +24,9 @@ namespace Project {
 		WarehouseChart(void)
 		{
 			InitializeComponent();
+			Date = gcnew List<String^>();
+			Amount = gcnew List<Int32>();
+			
 			//
 			//TODO: Add the constructor code here
 			//
@@ -51,8 +54,8 @@ namespace Project {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		List<String^>^ date;
-		List<Int32>^ amount;
+		List<String^>^ Date;
+		List<Int32>^ Amount;
 		String^ companyname;
 
 	private: System::Windows::Forms::TextBox^  textBox2;
@@ -152,6 +155,7 @@ namespace Project {
 			this->textBox1->Size = System::Drawing::Size(100, 20);
 			this->textBox1->TabIndex = 2;
 			this->textBox1->Visible = false;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &WarehouseChart::textBox1_TextChanged);
 			// 
 			// textBox2
 			// 
@@ -160,6 +164,7 @@ namespace Project {
 			this->textBox2->Size = System::Drawing::Size(100, 20);
 			this->textBox2->TabIndex = 3;
 			this->textBox2->Visible = false;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &WarehouseChart::textBox2_TextChanged);
 			// 
 			// name
 			// 
@@ -168,6 +173,7 @@ namespace Project {
 			this->name->Size = System::Drawing::Size(100, 20);
 			this->name->TabIndex = 4;
 			this->name->Visible = false;
+			this->name->TextChanged += gcnew System::EventHandler(this, &WarehouseChart::name_TextChanged);
 			// 
 			// selectBox
 			// 
@@ -218,6 +224,7 @@ namespace Project {
 			this->Controls->Add(this->chart1);
 			this->Name = L"WarehouseChart";
 			this->Text = L"WarehouseChart";
+			this->Load += gcnew System::EventHandler(this, &WarehouseChart::WarehouseChart_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->chart2))->EndInit();
 			this->ResumeLayout(false);
@@ -225,14 +232,21 @@ namespace Project {
 
 		}
 #pragma endregion
+		void MarshalString ( String ^ s, string& os ) {  
+			using namespace Runtime::InteropServices;  
+			const char* chars =   
+			(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();  
+			os = chars;  
+			Marshal::FreeHGlobal(IntPtr((void*)chars));  
+		}  
 		void fillProduct(){
 			array <Int32>^ productID;
 			array <String^>^productName;
 			array <Double>^ priceForFew;
-			string username,password;
-			MarshalString ( textBox1->Text, username );
-			MarshalString ( textBox2->Text, password );
-			MYSQL manager(username,password);
+			string Username,Password;
+			MarshalString ( username, Username );
+			MarshalString ( password, Password );
+			MYSQL manager(Username,Password);
 			vector <Product> productList = manager.getProduct();
 			productID = gcnew array<Int32> (productList.size());
 			productName = gcnew array<String^> (productList.size());
@@ -246,13 +260,7 @@ namespace Project {
 				selectBox->Items->Add(items);
 			}
 		}
-		void MarshalString ( String ^ s, string& os ) {  
-			using namespace Runtime::InteropServices;  
-			const char* chars =   
-			(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();  
-			os = chars;  
-			Marshal::FreeHGlobal(IntPtr((void*)chars));  
-		}  
+		
 	private: System::Void backgroundWorker1_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
 		string userName,passWord,productName,supplierName;
 		long int ItemID;
@@ -271,16 +279,17 @@ namespace Project {
 		vector <Receipt> receipts = manager.getReceipt();
 		//List<String^>^ date;
 		//List<Int32>^ amount;
+
 		for(int i=0;i < receipts.size();i++){
 			if(receipts[i].getID() == ItemID){
 				String^ buffer = gcnew String(receipts[i].getDate().c_str());
 				int index;
-				if((index = date->IndexOf(buffer)) == -1){
-					date->Add(buffer);
-					amount->Add(1);
+				if((index = Date->IndexOf(buffer)) == -1){
+					Date->Add(buffer);
+					Amount->Add(1);
 				}
 				else{
-					amount[index] += 1;
+					Amount[index] += 1;
 				}
 			}
 		}
@@ -288,8 +297,8 @@ namespace Project {
 	private: System::Void backgroundWorker1_RunWorkerCompleted(System::Object^  sender, System::ComponentModel::RunWorkerCompletedEventArgs^  e) {
 		try			
 		{ 
-			for(int i=0;i < date->Count;i++){
-				this->chart1->Series["Series1"]->Points->AddXY(date[i],amount[i]);
+			for(int i=0;i < Date->Count;i++){
+				this->chart1->Series["Series1"]->Points->AddXY(Date[i],Amount[i]);
 			}
 		}catch(Exception ^e)
 		{
@@ -298,9 +307,18 @@ namespace Project {
 		this->button1->Enabled = true;
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+			fillProduct();
 			companyname = name->Text;
 			backgroundWorker1->RunWorkerAsync();
 			this->button1->Enabled = false;
 	 }
+private: System::Void WarehouseChart_Load(System::Object^  sender, System::EventArgs^  e) {
+		 }
+private: System::Void name_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+		 }
+private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+		 }
+private: System::Void textBox2_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+		 }
 };
 }

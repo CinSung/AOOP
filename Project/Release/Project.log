@@ -1,4 +1,4 @@
-﻿Build started 1/4/2017 2:21:16 AM.
+﻿Build started 1/4/2017 7:50:14 AM.
      1>Project "C:\Users\me\Desktop\AOOP\Project\Project.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\Project.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -9,9 +9,9 @@
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp WareHouseForm.cpp WarehouseChart.cpp WarehouseDashboard.cpp /clr:nostdlib 
          MainWindow.cpp
      1>c:\users\me\desktop\aoop\project\Staff1.h(176): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(241): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(265): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(274): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(255): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(273): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(283): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(239): warning C4018: '<' : signed/unsigned mismatch
@@ -20,30 +20,30 @@
          Project.cpp
      1>c:\users\me\desktop\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\Staff1.h(176): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(241): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(265): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(274): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(255): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(273): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(283): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(239): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(226): warning C4101: 'addedAmount' : unreferenced local variable
      1>c:\users\me\desktop\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned mismatch
          WareHouseForm.cpp
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(241): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(265): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(274): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(255): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(273): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(283): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(239): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(226): warning C4101: 'addedAmount' : unreferenced local variable
          WarehouseChart.cpp
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(241): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(265): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(274): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(255): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(273): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(283): warning C4018: '<' : signed/unsigned mismatch
          WarehouseDashboard.cpp
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(241): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(265): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(274): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(255): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(273): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\me\desktop\aoop\project\WarehouseChart.h(283): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(30): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\me\desktop\aoop\project\WarehouseDashboard.h(239): warning C4018: '<' : signed/unsigned mismatch
@@ -51,7 +51,8 @@
          Generating Code...
          All outputs are up-to-date.
        CoreResGen:
-         No resources are out of date with respect to their source files. Skipping resource generation.
+         "C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile WarehouseChart.resx,Release\Project.WarehouseChart.resources
+         Processing resource file "WarehouseChart.resx" into "Release\Project.WarehouseChart.resources".
        ResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -88,4 +89,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:20.73
+Time Elapsed 00:00:20.00

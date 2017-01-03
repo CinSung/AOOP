@@ -17,8 +17,8 @@ bool MYSQL::addReceipt(int id,double price,string name){
   String^ Name = gcnew String(name.c_str());
   String^ ID = System::Convert::ToString(id);
   String^ Price = System::Convert::ToString(price);
-  String^ sqlQuery = "insert into receipts(productid,price,name) values (" 
-					  + ID +","+Price+",'"+Name +"');";
+  String^ sqlQuery = "insert into receipts(productid,price,name,date_created) values (" 
+					  + ID +","+Price+",'"+Name +"',now());";
   String ^sqlQuery3 = "select * from products where id = "+ID+" limit 1;";
   
   Int32 amount;
@@ -374,6 +374,44 @@ vector <Staffs> MYSQL::getStaff(){
           MarshalString(System::Convert::ToString(dataReader->GetString(1)),position);
           salary = dataReader->GetInt32(2);
           result.push_back(Staffs(name,position,salary));
+      }
+    }
+  }catch(Exception ^e){
+//    return false;
+    MessageBox::Show(e->Message);
+  }
+  return result;
+}
+vector <Receipt> MYSQL::getReceipt(int month){
+  String ^Username = gcnew String(username.c_str());
+  String^ Password = gcnew String(password.c_str());
+  String^ sqlQuery;
+
+  if( month >= 1 && month <= 9){
+	sqlQuery = "select productid,price,name,idx,date_format(date_created,'%d-%m-%y') from receipts where date_created like '%-0"+System::Convert::ToString(month)+"-%';";
+  }
+  else if( month >= 10 && month <= 12){
+	sqlQuery = "select productid,price,name,idx,date_format(date_created,'%d-%m-%y') from receipts where date_created like '%-"+System::Convert::ToString(month)+"-%';";
+  }
+  else{
+	sqlQuery = "select productid,price,name,idx,date_format(date_created,'%d-%m-%y')  from receipts;";
+  }
+  String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+  MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+  MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+  MySqlDataReader^ dataReader;
+  vector <Receipt> result;
+  long int price;
+  string name,date;
+  try{
+    conn->Open();
+    dataReader = connCmd->ExecuteReader();
+    if(dataReader->HasRows){
+      while(dataReader->Read()){
+          MarshalString(System::Convert::ToString(dataReader->GetString(2)),name);
+          MarshalString(System::Convert::ToString(dataReader->GetString(4)),date);
+          price = dataReader->GetInt32(1);
+          result.push_back(Receipt(name,date,price,dataReader->GetInt32(0)));
       }
     }
   }catch(Exception ^e){

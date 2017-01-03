@@ -97,6 +97,7 @@
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Project.cpp" />
     <ClCompile Include="PurchaseManage.cpp" />
+    <ClCompile Include="Receipt.cpp" />
     <ClCompile Include="SaleSystemForm.cpp" />
     <ClCompile Include="Staff1.cpp" />
     <ClCompile Include="Staffs.cpp" />
@@ -139,6 +140,7 @@
     </ClInclude>
     <ClInclude Include="Product.h" />
     <ClInclude Include="PurchaseManage.h" />
+    <ClInclude Include="Receipt.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SaleManage.h" />
     <ClInclude Include="SaleSystem.h" />

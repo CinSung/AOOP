@@ -162,8 +162,6 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			 MarshalString(textBox2->Text,pwd);
 			 MYSQL accountdata(usr,pwd);
 
-			 
-
 			 hide_login_and_showinfo();
 		 }
 private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {

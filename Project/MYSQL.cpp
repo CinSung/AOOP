@@ -203,7 +203,6 @@ bool MYSQL::updateProduct(Product& product,int item2Add){
   String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
   int total = (int)product.getAmount()+item2Add;
 	  conn = gcnew MySqlConnection(connectionInfo);
-	  conn->Open();
 	  String ^sqlQuery = "update products set amount = "+System::Convert::ToString(total)+
 		  " where id = "+System::Convert::ToString(product.getID())+";";
   try			
@@ -214,7 +213,7 @@ bool MYSQL::updateProduct(Product& product,int item2Add){
   }catch(Exception ^e)
   { 
 	//System::Windows::Forms::DialogResult result;
-	//result = MessageBox::Show( ex->ToString() );
+	 MessageBox::Show(e->Message);
 	conn->Close();
 	delete connCmd;
 	return false;

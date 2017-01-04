@@ -250,6 +250,7 @@ namespace Project {
 						break;				
 					}
 				}
+				logs = "add failed";
 			}
 			else{
 				logs = "failed to find the same object";

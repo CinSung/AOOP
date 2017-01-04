@@ -377,10 +377,15 @@ namespace Project {
 			Amount2->Clear();
 			Date2->TrimExcess();
 			Amount2->TrimExcess();
-			product2 = selectBox->SelectedItem->ToString();
-			if(product2 != ""){
-				backgroundWorker2->RunWorkerAsync();
-				this->button2->Enabled = false;
+			try{
+				product2 = selectBox->SelectedItem->ToString();
+				if(product2 != ""){
+					backgroundWorker2->RunWorkerAsync();
+					this->button2->Enabled = false;
+				}
+			}
+			catch(Exception^ e){
+				MessageBox::Show(e->Message);
 			}
 	}
 

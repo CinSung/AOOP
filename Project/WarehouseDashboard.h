@@ -27,7 +27,7 @@ namespace Project {
 			MYSQL manager("root","aoop2016");
 			vector <Supplier> suppliers = manager.getSupplier();
 			selectBox->BeginUpdate();
-			for(int i=0;i<suppliers.size();i++){
+			for(int i=0;i< (int)suppliers.size();i++){
 				String ^ buffer = gcnew String(suppliers[i].getCompanyName().c_str());
 				selectBox->Items->Add(buffer);
 			}
@@ -109,6 +109,7 @@ namespace Project {
 			this->selectBox->Name = L"selectBox";
 			this->selectBox->Size = System::Drawing::Size(228, 21);
 			this->selectBox->TabIndex = 0;
+			this->selectBox->SelectedIndexChanged += gcnew System::EventHandler(this, &WarehouseDashboard::selectBox_SelectedIndexChanged);
 			// 
 			// button1
 			// 
@@ -157,7 +158,7 @@ namespace Project {
 			this->textBox1->TabIndex = 4;
 			this->textBox1->Visible = false;
 			// 
-			// textBox2
+			// textBox211111
 			// 
 			this->textBox2->Location = System::Drawing::Point(148, 74);
 			this->textBox2->Name = L"textBox2";
@@ -223,11 +224,11 @@ namespace Project {
 			vector <Product> products = manager.getProduct();
 			string selectedCompany;
 			long int productID;
-			long int addedAmount;
+			//long int addedAmount;
 			int i,k,itemAmount;
 			MarshalString(selected,selectedCompany);
 			bool found = false;
-			for(i=0;i<suppliers.size();i++){
+			for(i=0;i<(int)suppliers.size();i++){
 				if(selectedCompany == suppliers[i].getCompanyName()){
 					productID = suppliers[i].getItemID();
 					itemAmount = suppliers[i].getItemAmount();
@@ -236,7 +237,7 @@ namespace Project {
 				}
 			}
 			if(found){
-				for(i=0;i<products.size();i++){
+				for(i=0;i<(int)products.size();i++){
 					if(products[i].getID() == productID){
 						if(manager.updateProduct(products[i],itemAmount)){
 							k = i;
@@ -258,5 +259,7 @@ namespace Project {
 	private: System::Void backgroundWorker2_RunWorkerCompleted(System::Object^  sender, System::ComponentModel::RunWorkerCompletedEventArgs^  e) {
 		listBox1->Items->Add(logs);		  
 	}
+private: System::Void selectBox_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+		 }
 };
 }

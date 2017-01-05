@@ -87,7 +87,11 @@
     <ClCompile Include="PosUI.cpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Accounts.cpp">
+=======
+    <ClCompile Include="Receipt.cpp">
+>>>>>>> origin/master
       <Filter>原始程式檔</Filter>
     </ClCompile>
   </ItemGroup>
@@ -197,6 +201,7 @@
     <ClInclude Include="PosUI.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Account12.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
@@ -204,6 +209,9 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="Accounts.h">
+=======
+    <ClInclude Include="Receipt.h">
+>>>>>>> origin/master
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
@@ -243,11 +251,14 @@
     <EmbeddedResource Include="PosUI.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Account12.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="Account1.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
+=======
+>>>>>>> origin/master
   </ItemGroup>
 </Project>

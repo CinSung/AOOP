@@ -258,7 +258,7 @@ namespace Project {
 			productName = gcnew array<String^> (productList.size());
 			priceForFew = gcnew array<Double> (productList.size());
 			array_size = productList.size();
-			for(int i=0;i<productList.size();i++){
+			for(int i=0;i<(int)productList.size();i++){
 				String ^ items = gcnew String(productList[i].getName().c_str());
 				productName[i] = items;
 				productID[i] = productList[i].getID();

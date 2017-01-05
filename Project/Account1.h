@@ -186,7 +186,6 @@ namespace Project {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-<<<<<<< HEAD
 			this->ClientSize = System::Drawing::Size(622, 435);
 			this->Controls->Add(this->textBox5);
 			this->Controls->Add(this->textBox4);
@@ -194,9 +193,7 @@ namespace Project {
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
-=======
 			this->ClientSize = System::Drawing::Size(425, 186);
->>>>>>> origin/master
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
@@ -251,30 +248,27 @@ namespace Project {
 				 vector <Accounts> account= accountdata.getAccount();
 
 
-<<<<<<< HEAD
 
 				 hide_login_and_showinfo();
 
 
 			 }
-	private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
-=======
-			 hide_login_and_showinfo();
-		 }
+//	private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
+//			 hide_login_and_showinfo();
+//		 }
 private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
 		 }
 private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
 			 if (e->KeyCode==Keys::Enter)
 			 {
 				 button1_Click(sender,e);
->>>>>>> origin/master
 			 }
-	private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
+/*	private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
 				 if (e->KeyCode==Keys::Enter)
 				 {
 					 button1_Click(sender,e);
 				 }
 			 }
-
+*/
 };
 }

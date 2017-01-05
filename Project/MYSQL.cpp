@@ -381,7 +381,6 @@ vector <Staffs> MYSQL::getStaff(){
   }
   return result;
 }
-<<<<<<< HEAD
 
 
 vector <Accounts> MYSQL::getAccount(){
@@ -452,7 +451,6 @@ vector <string> MYSQL::getuser(){
 
 	return usr;
 }
-=======
 vector <Receipt> MYSQL::getReceipt(int month){
   String ^Username = gcnew String(username.c_str());
   String^ Password = gcnew String(password.c_str());
@@ -491,4 +489,3 @@ vector <Receipt> MYSQL::getReceipt(int month){
   }
   return result;
 }
->>>>>>> origin/master

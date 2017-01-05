@@ -22,6 +22,9 @@
     <None Include="app.ico">
       <Filter>資源檔</Filter>
     </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Project.cpp">
@@ -164,9 +167,6 @@
     <ClInclude Include="StoreInfo.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
-    <ClInclude Include="Account1.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
     <ClInclude Include="SaleSystemForm.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
@@ -194,6 +194,12 @@
     <ClInclude Include="PosUI.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="Account12.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Account1.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -216,9 +222,6 @@
     <EmbeddedResource Include="StoreInfo.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="Account1.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="SaleSystemForm.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
@@ -229,6 +232,12 @@
       <Filter>資源檔</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="WarehouseDashboard.resx">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PosUI.resx">
+      <Filter>資源檔</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account12.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
   </ItemGroup>

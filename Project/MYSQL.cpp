@@ -382,3 +382,73 @@ vector <Staffs> MYSQL::getStaff(){
   }
   return result;
 }
+
+
+vector <Account> MYSQL::getAccount(){
+	String ^Username = gcnew String(username.c_str());
+	String^ Password = gcnew String(password.c_str());
+	String^ sqlQuery = "select * from money";
+	String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+	MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+	MySqlDataReader^ dataReader;
+	
+	Account value;
+
+	try{
+		conn->Open();
+		dataReader = connCmd->ExecuteReader();
+		if(dataReader->HasRows){
+			while(dataReader->Read()){
+				value.setcash(dataReader->GetInt32(0));
+				value.seticash(dataReader->GetInt32(1));
+				value.setcreditcard(dataReader->GetInt32(2));
+				//salary = dataReader->GetInt32(2);
+				//result.push_back(Staffs(name,position,salary));
+			}
+		}
+	}catch(Exception ^e){
+		//    return false;
+		MessageBox::Show(e->Message);
+	}
+
+	vector <Account> r;
+
+	r.push_back(value);
+
+	return r;
+}
+
+vector <string> MYSQL::getuser(){
+	String ^Username = gcnew String(username.c_str());
+	String^ Password = gcnew String(password.c_str());
+	String^ sqlQuery = "select User from mysql.user;";
+	String^ connectionInfo = "datasource=theblackcat102.com; port=3306;username="+Username+";password="+Password+";database=MYSQL57";
+	MySqlConnection^ conn = gcnew MySqlConnection(connectionInfo);
+	MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
+	MySqlDataReader^ dataReader;
+
+	vector <string> usr;
+	string usrname;
+
+	try{
+		conn->Open();
+		dataReader = connCmd->ExecuteReader();
+		if(dataReader->HasRows){
+			int i=0;
+			while(dataReader->Read()){
+				MarshalString(System::Convert::ToString(dataReader->GetString(0)),usrname);
+				usr.push_back(usrname);
+				//salary = dataReader->GetInt32(2);
+				//result.push_back(Staffs(name,position,salary));
+			}
+		}
+	}catch(Exception ^e){
+		//    return false;
+		MessageBox::Show(e->Message);
+	}
+
+	
+
+	return usr;
+}

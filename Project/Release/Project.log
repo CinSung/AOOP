@@ -1,30 +1,22 @@
-﻿已經開始建置於 2017/1/3 下午 07:10:34。
+﻿已經開始建置於 2017/1/5 下午 07:55:01。
      1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\AOOP\Project\Project.vcxproj"。
      1>InitializeBuildStatus:
-         由於指定了 "AlwaysCreate"，因此正在建立 "Release\Project.unsuccessfulbuild"。
+         正在變更時間戳記 "Release\Project.unsuccessfulbuild"。
        GenerateTargetFrameworkMonikerAttribute:
        將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(91,5): warning : 遺漏必要的檔案 "C:\PROGRAM FILES\MYSQL\CONNECTOR.NET 6.9\ASSEMBLIES\V4.0\MYSQL.DATA.DLL"。
          先前的錯誤已轉換成警告，因為工作是以 ContinueOnError=true 呼叫。
        ClCompile:
          所有輸出都是最新的。
-         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainWindow.cpp Project.cpp /clr:nostdlib 
-         MainWindow.cpp
-     1>d:\desktop\project\aoop\project\Staff1.h(176): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : 未參考的區域變數
-     1>d:\desktop\project\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned 不相符
-         Project.cpp
-     1>d:\desktop\project\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\Staff1.h(176): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(29): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(221): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(230): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\WarehouseDashboard.h(217): warning C4101: 'addedAmount' : 未參考的區域變數
-     1>d:\desktop\project\aoop\project\PosUI.h(261): warning C4018: '<' : signed/unsigned 不相符
-         正在產生程式碼...
+         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MYSQL.cpp /clr:nostdlib 
+         MYSQL.cpp
+     1>MYSQL.cpp(49): warning C4101: 'e' : 未參考的區域變數
+     1>MYSQL.cpp(79): warning C4101: 'e' : 未參考的區域變數
+     1>MYSQL.cpp(119): warning C4101: 'e' : 未參考的區域變數
+     1>MYSQL.cpp(155): warning C4101: 'e' : 未參考的區域變數
+     1>MYSQL.cpp(186): warning C4101: 'e' : 未參考的區域變數
+     1>MYSQL.cpp(214): warning C4101: 'e' : 未參考的區域變數
+     1>MYSQL.cpp(243): warning C4101: 'e' : 未參考的區域變數
          所有輸出都是最新的。
        ManagedIncrementalBuildPostProcessDependencyGraph:
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
@@ -46,12 +38,11 @@
          To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
          Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MICROSOFT.VISUALC.DLL' or one of its dependencies. 系統找不到指定的檔案。
        CoreResGen:
-         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile MainWindow.resx,Release\Project.MainWindow.resources
-         正在處理資源檔 "MainWindow.resx" 至 "Release\Project.MainWindow.resources"。
+         相對於資源的來源檔案，並沒有資源過期。將略過產生資源。
        ResourceCompile:
          所有輸出都是最新的。
        Link:
-         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\AOOP\Release\Project.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\Project.Account1.resources /ASSEMBLYRESOURCE:Release\Project.Form1.resources /ASSEMBLYRESOURCE:Release\Project.MainWindow.resources /ASSEMBLYRESOURCE:Release\Project.PosUI.resources /ASSEMBLYRESOURCE:Release\Project.SaleSystemForm.resources /ASSEMBLYRESOURCE:Release\Project.Staff1.resources /ASSEMBLYRESOURCE:Release\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseChart.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseDashboard.resources /ASSEMBLYRESOURCE:Release\Project.WareHouseForm.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Release\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\AOOP\Release\Project.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         d:\Software\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\Project\AOOP\Release\Project.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\Project.Account1.resources /ASSEMBLYRESOURCE:Release\Project.Account12.resources /ASSEMBLYRESOURCE:Release\Project.Form1.resources /ASSEMBLYRESOURCE:Release\Project.MainWindow.resources /ASSEMBLYRESOURCE:Release\Project.PosUI.resources /ASSEMBLYRESOURCE:Release\Project.SaleSystemForm.resources /ASSEMBLYRESOURCE:Release\Project.Staff1.resources /ASSEMBLYRESOURCE:Release\Project.StoreInfo.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseChart.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseDashboard.resources /ASSEMBLYRESOURCE:Release\Project.WareHouseForm.resources /ASSEMBLYRESOURCE:Release\Project.WarehouseManageUI.resources /MANIFEST /ManifestFile:"Release\Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Desktop\Project\AOOP\Release\Project.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
          Release\Account1.obj
          Release\AssemblyInfo.obj
          Release\MainWindow.obj
@@ -83,4 +74,4 @@
 
 建置成功。
 
-經過時間 00:00:01.75
+經過時間 00:00:01.62

@@ -1,6 +1,9 @@
 #pragma once
 #include "MYSQL.h"
+#include <vector>
+#include "Account.h"
 #include "Staff.h"
+using namespace std;
 
 namespace Project {
 
@@ -42,6 +45,12 @@ namespace Project {
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Label^  label5;
+	private: System::Windows::Forms::TextBox^  textBox3;
+	private: System::Windows::Forms::TextBox^  textBox4;
+	private: System::Windows::Forms::TextBox^  textBox5;
 
 	private:
 		/// <summary>
@@ -61,6 +70,12 @@ namespace Project {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -108,11 +123,71 @@ namespace Project {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Account::button1_Click);
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(83, 258);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(34, 15);
+			this->label3->TabIndex = 5;
+			this->label3->Text = L"Cash";
+			this->label3->Visible = false;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(83, 294);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(38, 15);
+			this->label4->TabIndex = 6;
+			this->label4->Text = L"iCash";
+			this->label4->Visible = false;
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(83, 332);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(73, 15);
+			this->label5->TabIndex = 7;
+			this->label5->Text = L"Credit Card";
+			this->label5->Visible = false;
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(157, 248);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(199, 25);
+			this->textBox3->TabIndex = 8;
+			this->textBox3->Visible = false;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(157, 291);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(199, 25);
+			this->textBox4->TabIndex = 9;
+			this->textBox4->Visible = false;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(157, 322);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(199, 25);
+			this->textBox5->TabIndex = 10;
+			this->textBox5->Visible = false;
+			// 
 			// Account
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(622, 435);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
@@ -133,6 +208,13 @@ namespace Project {
 			label1->Visible=false;
 			label2->Visible=false;
 			button1->Visible=false;
+
+			label3->Visible=true;
+			label4->Visible=true;
+			label5->Visible=true;
+			textBox3->Visible=true;
+			textBox4->Visible=true;
+			textBox5->Visible=true;
 		}
 
 #pragma endregion
@@ -147,26 +229,31 @@ namespace Project {
 
 	private: System::Void Account_Load(System::Object^  sender, System::EventArgs^  e) {
 			 }
-private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 
-			 bool success=1;
+				 bool success=1;
 
-			 string usr,pwd;
-			 MarshalString(textBox1->Text,usr);
-			 MarshalString(textBox2->Text,pwd);
-			 MYSQL accountdata(usr,pwd);
+				 string usr,pwd;
+				 MarshalString(textBox1->Text,usr);
+				 MarshalString(textBox2->Text,pwd);
+				 MYSQL accountdata(usr,pwd);
 
-			 
+				 //vector <Account> account=accountdata.getAccount();
 
-			 hide_login_and_showinfo();
-		 }
-private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
-		 }
-private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
-			 if (e->KeyCode==Keys::Enter)
-			 {
-				 button1_Click(sender,e);
+
+
+				 hide_login_and_showinfo();
+
+
 			 }
-		 }
+	private: System::Void textBox2_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e) {
+			 }
+	private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
+				 if (e->KeyCode==Keys::Enter)
+				 {
+					 button1_Click(sender,e);
+				 }
+			 }
+
 };
 }

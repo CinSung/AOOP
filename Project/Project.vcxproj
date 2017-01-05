@@ -85,6 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
+    <ClInclude Include="Account12.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Account1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -178,6 +184,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Account1.resx">
       <DependentUpon>Account1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account12.resx">
+      <DependentUpon>Account12.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resX">
       <DependentUpon>Form1.h</DependentUpon>

@@ -45,6 +45,23 @@ Class Project.StoreInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class Project.SaleSystemForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Project.WarehouseChart: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String password 'get set' : 
+    System.String username 'get set' : 
+    System.String companyName 'get set' : 
+  Methods:
+    get_companyName(): PrivateScope, Public, HideBySig, SpecialName
+    set_companyName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_username(): PrivateScope, Public, HideBySig, SpecialName
+    set_username(String): PrivateScope, Public, HideBySig, SpecialName
+    get_password(): PrivateScope, Public, HideBySig, SpecialName
+    set_password(String): PrivateScope, Public, HideBySig, SpecialName
+    InitializeComponent(): PrivateScope, Public, HideBySig
+    MarshalString(String, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    fillProduct(): PrivateScope, Public, HideBySig
 Class Project.WarehouseDashboard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -71,9 +88,6 @@ Class Project.MainWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class Project.WarehouseChart: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project.WarehouseManageUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

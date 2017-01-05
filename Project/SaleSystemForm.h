@@ -1,7 +1,6 @@
 #pragma once
 #include "MYSQL.h"
 #include <string>
-
 using namespace std;
 
 namespace Project {

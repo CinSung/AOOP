@@ -1,28 +1,48 @@
-﻿已經開始建置於 2017/1/5 下午 08:24:29。
+﻿已經開始建置於 2017/1/5 下午 08:37:57。
      1>節點 2 (build 目標) 上的專案 "D:\Desktop\Project\AOOP\Project\Project.vcxproj"。
      1>InitializeBuildStatus:
-         正在變更時間戳記 "Release\Project.unsuccessfulbuild"。
+         由於指定了 "AlwaysCreate"，因此正在建立 "Release\Project.unsuccessfulbuild"。
        GenerateTargetFrameworkMonikerAttribute:
        將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(91,5): warning : 遺漏必要的檔案 "C:\PROGRAM FILES\MYSQL\CONNECTOR.NET 6.9\ASSEMBLIES\V4.0\MYSQL.DATA.DLL"。
          先前的錯誤已轉換成警告，因為工作是以 ContinueOnError=true 呼叫。
        ClCompile:
          所有輸出都是最新的。
-         d:\Software\VisualStudio\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\Project.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.0\MySql.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Account1.cpp MainWindow.cpp Project.cpp /clr:nostdlib 
-         Account1.cpp
-     1>Account1.cpp(4): fatal error C1075: 與左大括號 '{'對應之前遇到檔案的結尾 (位於 'd:\desktop\project\aoop\project\Account1.h(8)')
-         MainWindow.cpp
-     1>d:\desktop\project\aoop\project\Staff1.h(176): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\SaleSystemForm.h(5): error C2143: 語法錯誤 : 遺漏 ';' (在 'using' 之前)
-     1>MainWindow.cpp(4): fatal error C1075: 與左大括號 '{'對應之前遇到檔案的結尾 (位於 'd:\desktop\project\aoop\project\Account1.h(8)')
-         Project.cpp
-     1>d:\desktop\project\aoop\project\Form1.h(142): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\Staff1.h(176): warning C4018: '<' : signed/unsigned 不相符
-     1>d:\desktop\project\aoop\project\SaleSystemForm.h(5): error C2143: 語法錯誤 : 遺漏 ';' (在 'using' 之前)
-     1>Project.cpp(21): fatal error C1075: 與左大括號 '{'對應之前遇到檔案的結尾 (位於 'd:\desktop\project\aoop\project\Account1.h(8)')
-         正在產生程式碼...
-     1>專案 "D:\Desktop\Project\AOOP\Project\Project.vcxproj" (build 目標) 建置完成 -- 失敗。
+         所有輸出都是最新的。
+         所有輸出都是最新的。
+       ManagedIncrementalBuildPostProcessDependencyGraph:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 10.0\VC\BIN\1033\CLUI.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MSCORLIB.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.CORE.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DATA.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.DRAWING.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.WINDOWS.FORMS.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\SYSTEM.XML.DLL' or one of its dependencies. 系統找不到指定的檔案。
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'file:///C:\PROGRAM FILES\REFERENCE ASSEMBLIES\MICROSOFT\FRAMEWORK\.NETFRAMEWORK\V4.0\MICROSOFT.VISUALC.DLL' or one of its dependencies. 系統找不到指定的檔案。
+       CoreResGen:
+         相對於資源的來源檔案，並沒有資源過期。將略過產生資源。
+       ResourceCompile:
+         所有輸出都是最新的。
+       Link:
+         所有輸出都是最新的。
+         Project.vcxproj -> D:\Desktop\Project\AOOP\Release\Project.exe
+       MetaGen:
+       將略過目標 "MetaGen"，因為所有輸出檔對於其輸入檔而言都已更新。
+       FinalizeBuildStatus:
+         正在刪除檔案 "Release\Project.unsuccessfulbuild"。
+         正在變更時間戳記 "Release\Project.lastbuildstate"。
+     1>專案 "D:\Desktop\Project\AOOP\Project\Project.vcxproj" (build 目標) 建置完成。
 
-建置失敗。
+建置成功。
 
-經過時間 00:00:00.46
+經過時間 00:00:00.14

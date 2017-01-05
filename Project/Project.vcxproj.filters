@@ -88,12 +88,15 @@
       <Filter>標頭檔</Filter>
     </ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClCompile Include="Accounts.cpp">
 =======
     <ClCompile Include="Receipt.cpp">
 >>>>>>> origin/master
       <Filter>原始程式檔</Filter>
     </ClCompile>
+=======
+>>>>>>> parent of 87a8737... fix account
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -208,12 +211,15 @@
     <ClInclude Include="Account1.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Accounts.h">
 =======
     <ClInclude Include="Receipt.h">
 >>>>>>> origin/master
       <Filter>標頭檔</Filter>
     </ClInclude>
+=======
+>>>>>>> parent of 87a8737... fix account
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -255,10 +261,13 @@
     <EmbeddedResource Include="Account12.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Account1.resx">
       <Filter>資源檔</Filter>
     </EmbeddedResource>
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 87a8737... fix account
   </ItemGroup>
 </Project>

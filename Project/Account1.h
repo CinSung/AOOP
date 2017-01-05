@@ -1,7 +1,7 @@
 #pragma once
 #include "MYSQL.h"
 #include <vector>
-#include "Accounts.h"
+#include "Account.h"
 #include "Staff.h"
 using namespace std;
 
@@ -245,7 +245,7 @@ namespace Project {
 				 MarshalString(textBox2->Text,pwd);
 				 MYSQL accountdata(usr,pwd);
 
-				 vector <Accounts> account= accountdata.getAccount();
+				 //vector <Account> account=accountdata.getAccount();
 
 
 
@@ -263,6 +263,7 @@ private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows:
 			 {
 				 button1_Click(sender,e);
 			 }
+		 }
 /*	private: System::Void textBox2_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e) {
 				 if (e->KeyCode==Keys::Enter)
 				 {

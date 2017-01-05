@@ -92,7 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account1.cpp" />
-    <ClCompile Include="Accounts.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="MYSQL.cpp" />
@@ -125,7 +124,6 @@
     <ClInclude Include="Account1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Accounts.h" />
     <ClInclude Include="BasicFunction.h" />
     <ClInclude Include="Cash.h" />
     <ClInclude Include="CreditCard.h" />

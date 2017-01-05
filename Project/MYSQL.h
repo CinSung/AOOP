@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include "Staffs.h"
-#include "Accounts.h"
+#include "Account.h"
 #include "Supplier.h"
 #include "Product.h"
 #include "Package.h"
@@ -45,7 +45,7 @@ class MYSQL{
       vector <Package> getPackage();
       vector <Product> getProduct();
       vector <Staffs> getStaff();
-	  vector <Accounts> getAccount();
+	  vector <Account> getAccount();
 	  vector <string> getuser();
 	  vector <Receipt> getReceipt(int month = -1);
       bool insertSQL( Supplier& );

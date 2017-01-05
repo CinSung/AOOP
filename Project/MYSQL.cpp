@@ -384,7 +384,7 @@ vector <Staffs> MYSQL::getStaff(){
 }
 
 
-vector <Account> MYSQL::getAccount(){
+vector <Accounts> MYSQL::getAccount(){
 	String ^Username = gcnew String(username.c_str());
 	String^ Password = gcnew String(password.c_str());
 	String^ sqlQuery = "select * from money";
@@ -393,7 +393,7 @@ vector <Account> MYSQL::getAccount(){
 	MySqlCommand^ connCmd = gcnew MySqlCommand(sqlQuery,conn);
 	MySqlDataReader^ dataReader;
 	
-	Account value;
+	Accounts value;
 
 	try{
 		conn->Open();
@@ -412,7 +412,7 @@ vector <Account> MYSQL::getAccount(){
 		MessageBox::Show(e->Message);
 	}
 
-	vector <Account> r;
+	vector <Accounts> r;
 
 	r.push_back(value);
 

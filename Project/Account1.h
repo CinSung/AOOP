@@ -1,7 +1,7 @@
 #pragma once
 #include "MYSQL.h"
 #include <vector>
-#include "Account.h"
+#include "Accounts.h"
 #include "Staff.h"
 using namespace std;
 
@@ -238,7 +238,7 @@ namespace Project {
 				 MarshalString(textBox2->Text,pwd);
 				 MYSQL accountdata(usr,pwd);
 
-				 //vector <Account> account=accountdata.getAccount();
+				 vector <Accounts> account= accountdata.getAccount();
 
 
 

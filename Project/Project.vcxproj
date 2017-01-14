@@ -118,9 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
-    <ClInclude Include="Account12.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Account1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -186,9 +183,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Account1.resx">
       <DependentUpon>Account1.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Account12.resx">
-      <DependentUpon>Account12.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resX">
       <DependentUpon>Form1.h</DependentUpon>

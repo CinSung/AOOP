@@ -81,56 +81,56 @@ namespace Project {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(112, 17);
+			this->button1->Location = System::Drawing::Point(183, 21);
 			this->button1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(375, 65);
+			this->button1->Size = System::Drawing::Size(154, 117);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"員工管理";
+			this->button1->Text = L"員工管理( Worker)";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MainWindow::button1_Click);
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(112, 88);
+			this->button2->Location = System::Drawing::Point(25, 289);
 			this->button2->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(375, 65);
+			this->button2->Size = System::Drawing::Size(312, 43);
 			this->button2->TabIndex = 1;
-			this->button2->Text = L"超商資料";
+			this->button2->Text = L"超商資料 ( info)";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MainWindow::button2_Click);
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(112, 158);
+			this->button3->Location = System::Drawing::Point(25, 144);
 			this->button3->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(375, 65);
+			this->button3->Size = System::Drawing::Size(154, 117);
 			this->button3->TabIndex = 2;
-			this->button3->Text = L"帳目";
+			this->button3->Text = L"帳目 ( Account )";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MainWindow::button3_Click);
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(112, 298);
+			this->button5->Location = System::Drawing::Point(183, 144);
 			this->button5->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(375, 65);
+			this->button5->Size = System::Drawing::Size(154, 117);
 			this->button5->TabIndex = 4;
-			this->button5->Text = L"倉儲管理";
+			this->button5->Text = L"倉儲管理 ( Cargo Managment)";
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &MainWindow::button5_Click);
 			// 
 			// button6
 			// 
-			this->button6->Location = System::Drawing::Point(112, 227);
+			this->button6->Location = System::Drawing::Point(25, 21);
 			this->button6->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(375, 65);
+			this->button6->Size = System::Drawing::Size(154, 117);
 			this->button6->TabIndex = 5;
-			this->button6->Text = L"銷售服務";
+			this->button6->Text = L"銷售服務 (Sales Service )";
 			this->button6->UseVisualStyleBackColor = true;
 			this->button6->Click += gcnew System::EventHandler(this, &MainWindow::button6_Click);
 			// 
@@ -143,7 +143,7 @@ namespace Project {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(586, 481);
+			this->ClientSize = System::Drawing::Size(370, 352);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button3);

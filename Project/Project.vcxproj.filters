@@ -1,273 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="原始程式檔">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="標頭檔">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="資源檔">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="DataSources">
-      <UniqueIdentifier>{25ea8758-387c-46c4-91a7-0b1571a8a4f5}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="Account1.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MYSQL.cpp" />
+    <ClCompile Include="Package.cpp" />
+    <ClCompile Include="PosUI.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Project.cpp" />
+    <ClCompile Include="PurchaseManage.cpp" />
+    <ClCompile Include="Receipt.cpp" />
+    <ClCompile Include="SaleSystemForm.cpp" />
+    <ClCompile Include="Staff1.cpp" />
+    <ClCompile Include="Staffs.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="StoreInfo.cpp" />
+    <ClCompile Include="Supplier.cpp" />
+    <ClCompile Include="WarehouseChart.cpp" />
+    <ClCompile Include="WarehouseDashboard.cpp" />
+    <ClCompile Include="WareHouseForm.cpp" />
+    <ClCompile Include="WarehouseManage.cpp" />
+    <ClCompile Include="WarehouseManageUI.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
-    <None Include="app.ico">
-      <Filter>資源檔</Filter>
-    </None>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="Account1.h" />
+    <ClInclude Include="BasicFunction.h" />
+    <ClInclude Include="Cash.h" />
+    <ClInclude Include="CreditCard.h" />
+    <ClInclude Include="Detail.h" />
+    <ClInclude Include="EcommercialManage.h" />
+    <ClInclude Include="Epayment.h" />
+    <ClInclude Include="Form1.h" />
+    <ClInclude Include="Icash.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="MYSQL.h" />
+    <ClInclude Include="Package.h" />
+    <ClInclude Include="Payment.h" />
+    <ClInclude Include="PosUI.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="PurchaseManage.h" />
+    <ClInclude Include="Receipt.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SaleManage.h" />
+    <ClInclude Include="SaleSystem.h" />
+    <ClInclude Include="SaleSystemForm.h" />
+    <ClInclude Include="Staff.h" />
+    <ClInclude Include="Staff1.h" />
+    <ClInclude Include="StaffManage.h" />
+    <ClInclude Include="Staffs.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StoreData.h" />
+    <ClInclude Include="StoreInfo.h" />
+    <ClInclude Include="StoreManage.h" />
+    <ClInclude Include="Supplier.h" />
+    <ClInclude Include="WarehouseChart.h" />
+    <ClInclude Include="WarehouseDashboard.h" />
+    <ClInclude Include="WareHouseForm.h" />
+    <ClInclude Include="WarehouseManage.h" />
+    <ClInclude Include="WarehouseManageUI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Account1.resx" />
+    <EmbeddedResource Include="Account12.resx" />
+    <EmbeddedResource Include="Form1.resX" />
+    <EmbeddedResource Include="MainWindow.resx" />
+    <EmbeddedResource Include="PosUI.resx" />
+    <EmbeddedResource Include="SaleSystemForm.resx" />
+    <EmbeddedResource Include="Staff1.resx" />
+    <EmbeddedResource Include="StoreInfo.resx" />
+    <EmbeddedResource Include="WarehouseChart.resx" />
+    <EmbeddedResource Include="WarehouseDashboard.resx" />
+    <EmbeddedResource Include="WareHouseForm.resx" />
+    <EmbeddedResource Include="WarehouseManageUI.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagram3.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Project.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="AssemblyInfo.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Package.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="PurchaseManage.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="WarehouseManage.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Product.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="WarehouseManageUI.cpp">
-      <Filter>標頭檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Supplier.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="MainWindow.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Staff1.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="StoreInfo.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Account1.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="SaleSystemForm.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="WareHouseForm.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="MYSQL.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="WarehouseChart.cpp">
-      <Filter>標頭檔</Filter>
-    </ClCompile>
-    <ClCompile Include="WarehouseDashboard.cpp">
-      <Filter>標頭檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Staffs.cpp">
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-    <ClCompile Include="PosUI.cpp">
-      <Filter>標頭檔</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ClCompile Include="Accounts.cpp">
-=======
-    <ClCompile Include="Receipt.cpp">
->>>>>>> origin/master
-      <Filter>原始程式檔</Filter>
-    </ClCompile>
-=======
->>>>>>> parent of 87a8737... fix account
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Form1.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="StoreManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="StaffManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Log.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="StoreData.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Account.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="SaleManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="EcommercialManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="SaleSystem.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Detail.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Payment.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Cash.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="CreditCard.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Icash.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Package.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="PurchaseManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="WarehouseManage.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Product.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="WarehouseManageUI.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Supplier.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="MainWindow.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Epayment.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Staff1.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="StoreInfo.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="SaleSystemForm.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="WareHouseForm.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="MYSQL.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="WarehouseChart.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="WarehouseDashboard.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="BasicFunction.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Staff.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Staffs.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="PosUI.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Account12.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Account1.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Accounts.h">
-=======
-    <ClInclude Include="Receipt.h">
->>>>>>> origin/master
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-=======
->>>>>>> parent of 87a8737... fix account
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="app.rc">
-      <Filter>資源檔</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Form1.resX">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WarehouseManageUI.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainWindow.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Staff1.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StoreInfo.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaleSystemForm.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WareHouseForm.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WarehouseChart.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WarehouseDashboard.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PosUI.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Account12.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Account1.resx">
-      <Filter>資源檔</Filter>
-    </EmbeddedResource>
-=======
->>>>>>> origin/master
-=======
->>>>>>> parent of 87a8737... fix account
+    <None Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

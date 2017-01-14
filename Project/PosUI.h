@@ -266,6 +266,7 @@ namespace Project {
 				items += "  "+System::Convert::ToString(productList[i].getPriceFew());				
 				listBox1->Items->Add(items);
 			}
+			
 
 		}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -306,7 +307,9 @@ namespace Project {
 			 //manager.addReceipt()
 			manager.addReceipt(id,price,name);		 
 		 }
-
+			listBox2->Items->Clear();
+			listBox3->Items->Clear();
+			listBox4->Items->Clear();		
 	}
 private: System::Void Login_Click(System::Object^  sender, System::EventArgs^  e) {
 			Password = password->Text;
